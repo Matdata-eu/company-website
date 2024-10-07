@@ -2,6 +2,8 @@ stages:
   - pages
 
 pages:
+  stage: pages
+  image: alpine:latest
   script:
     - mkdir .public
     - cp -r * .public
