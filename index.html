@@ -4,9 +4,9 @@
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <title>Index - Personal Bootstrap Template</title>
-  <meta name="description" content="">
-  <meta name="keywords" content="">
+  <title>Index - MyResume Bootstrap Template</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
 
   <!-- Favicons -->
   <link href="assets/img/favicon.png" rel="icon">
@@ -23,16 +23,16 @@
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
   <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
   <link href="assets/vendor/aos/aos.css" rel="stylesheet">
-  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
   <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
 
   <!-- Main CSS File -->
   <link href="assets/css/main.css" rel="stylesheet">
 
   <!-- =======================================================
-  * Template Name: Personal
-  * Template URL: https://bootstrapmade.com/personal-free-resume-bootstrap-template/
-  * Updated: Aug 07 2024 with Bootstrap v5.3.3
+  * Template Name: MyResume
+  * Template URL: https://bootstrapmade.com/free-html-bootstrap-template-my-resume/
+  * Updated: Jun 29 2024 with Bootstrap v5.3.3
   * Author: BootstrapMade.com
   * License: https://bootstrapmade.com/license/
   ======================================================== -->
@@ -40,66 +40,241 @@
 
 <body class="index-page">
 
-  <header id="header" class="header d-flex align-items-center fixed-top">
-    <div class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
+  <header id="header" class="header d-flex flex-column justify-content-center">
 
-      <a href="index.html" class="logo d-flex align-items-center">
-        <!-- Uncomment the line below if you also wish to use an image logo -->
-        <!-- <img src="assets/img/logo.png" alt=""> -->
-        <h1 class="sitename">MatData</h1>
-      </a>
+    <i class="header-toggle d-xl-none bi bi-list"></i>
 
-      <nav id="navmenu" class="navmenu">
-        <ul>
-          <li><a href="index.html" class="active">Home</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="resume.html">Resume</a></li>
-          <li><a href="skills.html">Skills</a></li>
-          <li><a href="contact.html">Contact</a></li>
-        </ul>
-        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
-      </nav>
+    <nav id="navmenu" class="navmenu">
+      <ul>
+        <li><a href="#hero" class="active"><i class="bi bi-house navicon"></i><span>Home</span></a></li>
+        <li><a href="#about"><i class="bi bi-person navicon"></i><span>About</span></a></li>
+        <li><a href="#resume"><i class="bi bi-file-earmark-text navicon"></i><span>Resume</span></a></li>
+        <li><a href="#graph"><i class="bi bi-globe navicon"></i><span>My graph</span></a></li>
+        <li><a href="#contact"><i class="bi bi-envelope navicon"></i><span>Contact</span></a></li>
+      </ul>
+    </nav>
 
-    </div>
   </header>
 
   <main class="main">
 
     <!-- Hero Section -->
-    <section id="hero" class="hero section dark-background">
+    <section id="hero" class="hero section light-background">
 
-      <img src="assets/img/banner.png" alt="" data-aos="fade-in">
+      <img src="assets/img/hero-bg.png" alt="">
 
-      <div class="container" data-aos="zoom-out" data-aos-delay="100">
-        <h2>Mathias Vanden Auweele</h2>
-        <p>I'm a <span class="typed"
-            data-typed-items="linked data expert, data strategist, data engineer, data architect, DevOps engineer, GIS expert, railway specialist">Data
-            consultant</span><span class="typed-cursor typed-cursor--blink"></span></p>
-        <div class="social-links">
-          <a href="https://www.linkedin.com/in/mathiasvda/" target="_blank"><i class="bi bi-linkedin"></i></a>
-          <a href="https://mastodon.social/@mathiasvda" target="_blank"><i class="bi bi-mastodon"></i></a>
-          <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank"><i class="bi bi-reddit"></i></a>
-          <a href="mailto:info@matdata.eu"><i class="bi bi-envelope-at-fill"></i></a>
+      <div class="container" data-aos="zoom-out">
+        <div class="row justify-content-center">
+          <div class="col-lg-9">
+            <h2>MatData</h2>
+            <h3>Mathias Vanden Auweele</h3>
+            <p><span class="typed"
+                data-typed-items="Data strategist, Linked data expert, Data engineer, Data architect, DevOps engineer, GIS expert, Railway specialist">Data
+                consultant</span></p>
+            <div class="social-links">
+              <a href="https://www.linkedin.com/in/mathiasvda/" target="_blank"><i class="bi bi-linkedin"
+                  title="LinkedIn"></i></a>
+              <a href="https://github.com/MathiasVDA" target="_blank"><i class="bi bi-github" title="GitHub"></i></a>
+              <a href="https://gitlab.com/mathias.vanden.auweele" target="_blank"><i class="bi bi-gitlab"
+                  title="GitLab"></i></a>
+              <a href="https://mastodon.social/@mathiasvda" target="_blank"><i class="bi bi-mastodon"
+                  title="Mastodon"></i></a>
+              <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank"><i class="bi bi-reddit"
+                  title="Reddit"></i></a>
+              <a href="mailto:info@matdata.eu"><i class="bi bi-envelope-at-fill" title="E-mail"></i></a>
+            </div>
+          </div>
         </div>
       </div>
 
     </section><!-- /Hero Section -->
 
+    <!-- About Section -->
+    <section id="about" class="about section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>About</h2>
+        <p>15 years of experience leading business data and digitalisation projects at Infrabel. Ex-national
+          representative at CENELEC TC9 & EIM ex-speaker for ENE WG. Inventor and gardener at home. European Union,
+          Railway, Sustainability and Linked Data supporter.</p>
+      </div><!-- End Section Title -->
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row gy-4 justify-content-center">
+          <div class="col-lg-4">
+            <img src="assets/img/profile-img.jpg" class="img-fluid" alt="">
+          </div>
+          <div class="col-lg-8 content">
+            <h2>Data consultant</h2>
+            <p class="fst-italic py-3">
+            </p>
+            <div class="row">
+              <div class="col-lg-6">
+                <ul>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Birthyear:</strong> <span>1985</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Website:</strong> <span>www.matdata.eu</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Phone:</strong> <span>+32 491 16 16 88</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>City:</strong> <span>Between Brussels and Leuven,
+                      Belgium</span></li>
+                </ul>
+              </div>
+              <div class="col-lg-6">
+                <ul>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Age:</strong> <span>39</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Degree:</strong> <span>Master in engineering</span>
+                  </li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Email:</strong> <span>info@matdata.eu</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Freelance:</strong> <span>Available</span></li>
+                </ul>
+              </div>
+            </div>
+            <p class="py-3">
+            </p>
+          </div>
+        </div>
+
+      </div>
+
+    </section><!-- /About Section -->
+
+    <!-- Stats Section -->
+    <section id="stats" class="stats section">
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row gy-4">
+
+          <div class="col-lg-3 col-md-6 d-flex flex-column align-items-center">
+            <i class="bi bi-emoji-smile"></i>
+            <div class="stats-item">
+              <span data-purecounter-start="0" data-purecounter-end="15" data-purecounter-duration="1"
+                class="purecounter"></span>
+              <p>Years of experience</p>
+            </div>
+          </div><!-- End Stats Item -->
+
+          <div class="col-lg-3 col-md-6 d-flex flex-column align-items-center">
+            <i class="bi bi-journal-richtext"></i>
+            <div class="stats-item">
+              <span data-purecounter-start="0" data-purecounter-end="123" data-purecounter-duration="1"
+                class="purecounter"></span>
+              <p>Projects</p>
+            </div>
+          </div><!-- End Stats Item -->
+
+          <div class="col-lg-3 col-md-6 d-flex flex-column align-items-center">
+            <i class="bi bi-headset"></i>
+            <div class="stats-item">
+              <span data-purecounter-start="0" data-purecounter-end="1463" data-purecounter-duration="1"
+                class="purecounter"></span>
+              <p>Ideas</p>
+            </div>
+          </div><!-- End Stats Item -->
+
+          <div class="col-lg-3 col-md-6 d-flex flex-column align-items-center">
+            <i class="bi bi-people"></i>
+            <div class="stats-item">
+              <span data-purecounter-start="0" data-purecounter-end="2" data-purecounter-duration="1"
+                class="purecounter"></span>
+              <p>Kids</p>
+            </div>
+          </div><!-- End Stats Item -->
+
+        </div>
+
+      </div>
+
+    </section><!-- /Stats Section -->
+
+    <!-- Resume Section -->
+    <section id="resume" class="resume section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Resume</h2>
+        <p>Please see my <a href="https://www.linkedin.com/in/mathiasvda/" target="_blank">LinkedIn profile</a>.</p>
+      </div><!-- End Section Title -->
+
+    </section><!-- /Resume Section -->
+
+    <!-- Portfolio Section -->
+    <section id="graph" class="portfolio section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>My graph</h2>
+        <p>Link to skills-project graph.</p>
+      </div><!-- End Section Title -->
+
+    </section><!-- /Portfolio Section -->
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Contact</h2>
+        <p>Feel free to get into contact with us, using any of the methods below.</p>
+      </div><!-- End Section Title -->
+
+      <div class="container" data-aos="fade" data-aos-delay="100">
+
+        <div class="row gy-4">
+
+          <div class="col-lg-4">
+            <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="200">
+              <i class="bi bi-geo-alt flex-shrink-0"></i>
+              <div>
+                <h3>Address</h3>
+                <p>Between Brussels and Leuven</p>
+              </div>
+            </div><!-- End Info Item -->
+
+            <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="300">
+              <i class="bi bi-telephone flex-shrink-0"></i>
+              <div>
+                <h3>Call Us</h3>
+                <p>+32 491 16 16 88</p>
+              </div>
+            </div><!-- End Info Item -->
+
+            <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="400">
+              <i class="bi bi-envelope flex-shrink-0"></i>
+              <div>
+                <h3>Email Us</h3>
+                <p>info@matdata.eu</p>
+              </div>
+            </div><!-- End Info Item -->
+
+          </div>
+
+        </div>
+
+    </section><!-- /Contact Section -->
+
   </main>
 
-  <footer id="footer" class="footer dark-background">
+  <footer id="footer" class="footer position-relative light-background">
     <div class="container">
       <h3 class="sitename">Matdata</h3>
       <p>Hi, I'm Mathias, welcome to the website of my company MatData. How can I help you?</p>
       <div class="social-links d-flex justify-content-center">
-        <a href="https://www.linkedin.com/in/mathiasvda/" target="_blank"><i class="bi bi-linkedin"></i></a>
-        <a href="https://mastodon.social/@mathiasvda" target="_blank"><i class="bi bi-mastodon"></i></a>
-        <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank"><i class="bi bi-reddit"></i></a>
-        <a href="mailto:info@matdata.eu"><i class="bi bi-envelope-at-fill"></i></a>
+        <a href="https://www.linkedin.com/in/mathiasvda/" target="_blank"><i class="bi bi-linkedin"
+            title="LinkedIn"></i></a>
+        <a href="https://github.com/MathiasVDA" target="_blank"><i class="bi bi-github" title="GitHub"></i></a>
+        <a href="https://gitlab.com/mathias.vanden.auweele" target="_blank"><i class="bi bi-gitlab"
+            title="GitLab"></i></a>
+        <a href="https://mastodon.social/@mathiasvda" target="_blank"><i class="bi bi-mastodon"
+            title="Mastodon"></i></a>
+        <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank"><i class="bi bi-reddit"
+            title="Reddit"></i></a>
+        <a href="mailto:info@matdata.eu"><i class="bi bi-envelope-at-fill" title="E-mail"></i></a>
       </div>
       <div class="container">
         <div class="copyright">
-          <span>Copyright</span> <strong class="px-1 sitename">Matdata</strong> <span>All Rights Reserved</span>
+          <span>Copyright</span> <strong class="px-1 sitename">MatData</strong> <span>All Rights Reserved</span>
         </div>
         <div class="credits">
           <!-- All the links in the footer should remain intact. -->
@@ -126,10 +301,10 @@
   <script src="assets/vendor/typed.js/typed.umd.js"></script>
   <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
   <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
-  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
   <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
   <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
   <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
 
   <!-- Main JS File -->
   <script src="assets/js/main.js"></script>
