@@ -247,6 +247,15 @@
       }
     </script>
 
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      var email = 'info' + '@' + 'matdata.eu';
+      var emailLinks = document.querySelectorAll('.email-obfuscate');
+      emailLinks.forEach(function (link) {
+        link.href = 'mailto:' + email;
+      });
+    });
+  </script>
 
   <header id="header" class="header d-flex flex-column justify-content-center">
 
@@ -290,7 +299,7 @@
                   title="Mastodon"></i></a>
               <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank"><i class="bi bi-reddit"
                   title="Reddit"></i></a>
-              <a href="mailto:info@matdata.eu"><i class="bi bi-envelope-at-fill" title="E-mail"></i></a>
+              <a href="#" class="email-obfuscate"><i class="bi bi-envelope-at-fill" title="E-mail"></i></a>
             </div>
           </div>
         </div>
@@ -347,7 +356,8 @@
                   <li><i class="bi bi-chevron-right"></i> <strong>Age:</strong> <span>39</span></li>
                   <li><i class="bi bi-chevron-right"></i> <strong>Degree:</strong> <span>Master in engineering</span>
                   </li>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Email:</strong> <span>info@matdata.eu</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Email:</strong> <span class="email-obfuscate"></span>
+                  </li>
                   <li><i class="bi bi-chevron-right"></i> <strong>Freelance:</strong> <span>Available</span></li>
                 </ul>
               </div>
@@ -561,7 +571,7 @@
               <i class="bi bi-envelope flex-shrink-0"></i>
               <div>
                 <h3>Email Us</h3>
-                <p><a href="mailto:info@matdata.eu" target="_blank">info@matdata.eu</a></p>
+                <p><a href="#" class="email-obfuscate">Click for e-mail</a></p>
               </div>
             </div><!-- End Info Item -->
 
@@ -614,7 +624,7 @@
             title="Mastodon"></i></a>
         <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank"><i class="bi bi-reddit"
             title="Reddit"></i></a>
-        <a href="mailto:info@matdata.eu"><i class="bi bi-envelope-at-fill" title="E-mail"></i></a>
+        <a href="#" class="email-obfuscate"><i class="bi bi-envelope-at-fill" title="E-mail"></i></a>
       </div>
       <div class="container">
         <div class="copyright">
