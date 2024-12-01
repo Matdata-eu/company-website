@@ -8,6 +8,8 @@ pages:
     - mkdir .public
     - cp -r * .public
     - mv .public public
+    - find public -type f -regex '.*\.\(htm\|html\|xml\|txt\|text\|js\|css\|svg\)$' -exec gzip -f -k {} \;
+    - find public -type f -regex '.*\.\(htm\|html\|xml\|txt\|text\|js\|css\|svg\)$' -exec brotli -f -k {} \;
   artifacts:
     paths:
       - public
