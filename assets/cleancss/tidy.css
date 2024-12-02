@@ -1117,3 +1117,30 @@ button:not(:disabled) {
 .bi-x::before {
   content: "\f62a";
 }
+.bi-calendar-date-fill::before {
+  content: "\f1e3";
+}
+.bi-file-person-fill::before {
+  content: "\f3a6";
+}
+.bi-mailbox2-flag::before {
+  content: "\f8f2";
+}
+.bi-patch-check-fill::before {
+  content: "\f4b5";
+}
+.bi-house-door-fill::before {
+  content: "\f422";
+}
+.bi-phone-fill::before {
+  content: "\f4e2";
+}
+.bi-folder-symlink-fill::before {
+  content: "\f3d4";
+}
+.bi-calendar-date-fill::before {
+  content: "\f1e3";
+}
+.bi-suit-heart-fill::before {
+  content: "\f59d";
+}
