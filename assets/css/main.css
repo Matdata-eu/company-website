@@ -1520,3 +1520,40 @@ section,
   margin-right: 8px;
   color: var(--accent-color);
 }
+
+
+/* Custom styles for clients section */
+#clients-grid {
+  display: flex !important;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.clients .col-6,
+.clients .col-sm-4,
+.clients .col-md-3,
+.clients .col-lg-2 {
+  flex: 0 0 auto;
+  width: auto !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 15px;
+  min-height: 90px;
+  min-width: 150px;
+}
+
+.clients .img-fluid {
+  height: 60px;
+  width: auto;
+  max-width: 140px;
+  object-fit: contain;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.clients .img-fluid:hover {
+  transform: scale(1.1);
+  opacity: 0.8;
+}

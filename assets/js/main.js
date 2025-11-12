@@ -226,4 +226,54 @@
   window.addEventListener('load', navmenuScrollspy);
   document.addEventListener('scroll', navmenuScrollspy);
 
+  
+  document.addEventListener('DOMContentLoaded', function() {
+    // Calculate age
+    const birthYear = 1985;
+    const currentYear = new Date().getFullYear();
+    const age = currentYear - birthYear;
+    document.getElementById('age').textContent = age;
+
+    // Calculate years of experience
+    const careerStart = 2009;
+    const yearsExperience = currentYear - careerStart;
+    const experienceCounter = document.querySelector('.stats-item [data-purecounter-end="16"]');
+    if (experienceCounter) {
+      experienceCounter.setAttribute('data-purecounter-end', yearsExperience.toString());
+    }
+
+    // Render clients from YAML
+    const grid = document.getElementById('clients-grid');
+    if (grid && window.jsyaml) {
+      fetch('assets/data/clients.yaml')
+        .then(r => r.text())
+        .then(text => {
+          const parsed = jsyaml.load(text);
+          const clients = Array.isArray(parsed) ? parsed : (parsed?.clients || []);
+          grid.innerHTML = '';
+          clients.forEach(c => {
+            const name = c.name || 'Client';
+            const col = document.createElement('div');
+            col.className = 'col-6 col-sm-4 col-md-3 col-lg-2';
+
+            const a = document.createElement('a');
+            a.href = c.url || '#';
+            a.target = '_blank';
+            a.rel = 'noopener';
+            a.setAttribute('aria-label', name);
+
+            const img = document.createElement('img');
+            img.className = 'img-fluid';
+            img.loading = 'lazy';
+            img.alt = c.alt || `${name} logo`;
+            img.src = c.logo;
+
+            a.appendChild(img);
+            col.appendChild(a);
+            grid.appendChild(col);
+          });
+        })
+        .catch(err => console.error('Failed to load clients.yaml', err));
+    }
+  });
 })();

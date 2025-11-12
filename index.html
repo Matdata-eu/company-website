@@ -52,6 +52,7 @@
   <link href="assets/css/main.css" rel="stylesheet">
   <link href="assets/vendor/aos/aos.css" rel="stylesheet">
   <link href="assets/cleancss/tidy.css" rel="stylesheet">
+    
   <!-- =======================================================
   * Template Name: MyResume
   * Template URL: https://bootstrapmade.com/free-html-bootstrap-template-my-resume/
@@ -93,6 +94,7 @@
           { "@id": "https://matdata.eu/#about" },
           { "@id": "https://matdata.eu/#resume" },
           { "@id": "https://matdata.eu/#graph" },
+          { "@id": "https://matdata.eu/#clients" },
           { "@id": "https://matdata.eu/#contact" }
         ]
       }
@@ -270,6 +272,7 @@
         <li><a href="#about"><i class="bi bi-person navicon"></i><span>About</span></a></li>
         <li><a href="#resume"><i class="bi bi-file-earmark-text navicon"></i><span>Resume</span></a></li>
         <li><a href="#graph"><i class="bi bi-globe navicon"></i><span>Expertise</span></a></li>
+        <li><a href="#clients"><i class="bi bi-people navicon"></i><span>Customers</span></a></li>
         <li><a href="#contact"><i class="bi bi-envelope navicon"></i><span>Contact</span></a></li>
       </ul>
     </nav>
@@ -541,6 +544,21 @@
 
           </section><!-- /Portfolio Section -->
 
+    <!-- Customers & Partners Section -->
+    <section id="clients" class="clients section light-background">
+
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Customers & Partners</h2>
+        <p>Proud to have worked with and alongside these organizations.</p>
+      </div>
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+        <div class="row gy-4 justify-content-center align-items-center text-center" id="clients-grid">
+          <!-- Populated from YAML -->
+        </div>
+      </div>
+    </section>
+
     <!-- Contact Section -->
     <section id="contact" class="contact section">
 
@@ -670,28 +688,11 @@
   <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
   <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
 
+  <!-- YAML parser -->
+  <script src="https://cdn.jsdelivr.net/npm/js-yaml@4.1.0/dist/js-yaml.min.js"></script>
+
   <!-- Main JS File -->
   <script src="assets/js/main.js"></script>
-
-  <!-- Add before closing </body> tag -->
-  <script>
-    document.addEventListener('DOMContentLoaded', function() {
-      // Calculate age
-      const birthYear = 1985;
-      const currentYear = new Date().getFullYear();
-      const age = currentYear - birthYear;
-      document.getElementById('age').textContent = age;
-
-      // Calculate years of experience
-      const careerStart = 2009;
-      const yearsExperience = currentYear - careerStart;
-      const experienceCounter = document.querySelector('.stats-item [data-purecounter-end="16"]');
-      if (experienceCounter) {
-        experienceCounter.setAttribute('data-purecounter-end', yearsExperience.toString());
-      }
-    });
-  </script>
-
 </body>
 
 </html>
