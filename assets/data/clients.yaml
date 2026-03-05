@@ -9,7 +9,7 @@ clients:
     alt: ERA - European Union Agency for Railways logo
   - name: Infrabel
     url: https://www.infrabel.be/
-    logo: https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Infrabel_logo.svg/2560px-Infrabel_logo.svg.png
+    logo: https://upload.wikimedia.org/wikipedia/commons/a/a5/Infrabel_logo.svg
     alt: Infrabel logo
   - name: Certifer
     url: https://www.certifer.eu/
