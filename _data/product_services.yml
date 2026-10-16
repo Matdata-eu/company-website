@@ -1,0 +1,77 @@
+# Service cards in the "Products" section, grouped per open-source tool.
+# Each tool gets a heading, a short intro, links, and a list of offers (title, text, tags).
+# Delete an offer to drop it from the site; the cards reflow on their own.
+
+- tool: RINF Atlas
+  intro: >-
+    The map and search stay free and open. For infrastructure managers, railway undertakings
+    and ministries that need more from ERA's Register of Infrastructure, MatData offers:
+  links:
+    - { label: Open RINF Atlas →, url: "https://rinf-atlas.matdata.eu" }
+  offers:
+    - title: RINF data quality & submission
+      text: >-
+        Audits of your RINF data with SHACL checks that go beyond ERA's own validation, hands-on
+        support for your submissions, and training in the ERA ontology and SPARQL.
+      tags: [SHACL, RINF, Training]
+    - title: Your own private instance
+      text: >-
+        RINF Atlas on your own infrastructure, behind your single sign-on, with your own layers
+        on top: asset data, possessions, planned works. Set up, supported and backed by an SLA.
+      tags: [On-premise, SSO, SLA]
+    - title: Custom facets & analyses
+      text: >-
+        Tailored views built on the editable SHACL facets, such as route compatibility for your
+        rolling stock fleet or ETCS and ERTMS coverage. Delivered as fixed-price projects.
+      tags: [Fixed price, Route compatibility, ERTMS]
+    - title: Premium features
+      text: >-
+        Saved searches, change alerts ("tell me when line X changes"), dataset diff reports,
+        bulk API access and branded PDF or Excel exports, on top of the free core.
+      tags: [Alerts, API, Exports]
+    - title: Data products
+      text: >-
+        Cleaned and derived datasets, such as merged track geometries, a routable network graph
+        and ready-to-use GIS packages, or a commercial API. Built on ERA's open RINF data
+        (CC BY 4.0), with attribution.
+      tags: [GIS, Network graph, API]
+
+- tool: MatGUI
+  intro: >-
+    MatGUI is free to use as a website, on npm and on Docker Hub. When your team works with
+    SPARQL every day, MatData can shape it around your organisation:
+  links:
+    - { label: Open MatGUI →, url: "https://matgui.matdata.eu/" }
+  offers:
+    - title: Your own private instance
+      text: >-
+        Hosted by MatData or on your own infrastructure, behind your company login (OAuth or
+        OpenID Connect, such as Microsoft Entra ID), with your branding and default settings.
+      tags: [SSO, Hosting, Branding]
+    - title: Endpoint shortcuts & saved queries
+      text: >-
+        A shared catalogue of your SPARQL endpoints and a library of saved, named queries, so
+        nobody has to paste URLs or rewrite the same query twice.
+      tags: [Endpoints, Query library]
+    - title: Queries stored in your own triple store
+      text: >-
+        Saved queries kept as RDF on a SPARQL endpoint you control, so they stay versioned,
+        searchable and shared across teams and tools.
+      tags: [SPARQL, RDF, Governance]
+    # Suggested: turns saved queries into forms for colleagues who don't write SPARQL.
+    - title: Query forms & dashboards
+      text: >-
+        Parameterised queries turned into simple forms, tables and charts, so colleagues who
+        don't write SPARQL can still get answers from the knowledge graph.
+      tags: [No-code, Dashboards]
+    # Suggested: embedding and connecting to secured, commercial triple stores.
+    - title: Integration & embedding
+      text: >-
+        MatGUI embedded in your portal, data catalogue or intranet, and connected to secured
+        triple stores such as GraphDB, Stardog, Virtuoso or Amazon Neptune.
+      tags: [Embedding, Triple stores]
+    - title: Features on request
+      text: >-
+        New views, plugins and workflows built to your specification and contributed back to
+        the open-source project, plus SPARQL training and support for your team.
+      tags: [Development, Support, Training]

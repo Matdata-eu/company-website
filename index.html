@@ -28,6 +28,7 @@ scripts:
         { "@id": "https://matdata.eu/" },
         { "@id": "https://matdata.eu/#services" },
         { "@id": "https://matdata.eu/#projects" },
+        { "@id": "https://matdata.eu/#products" },
         { "@id": "https://matdata.eu/#talks" },
         { "@id": "https://matdata.eu/#clients" },
         { "@id": "https://matdata.eu/#about" },
@@ -157,6 +158,36 @@ scripts:
         </article>
         {% endfor %}
       </div>
+    </div>
+  </section>
+
+  <!-- Product services, grouped per tool -->
+  <section class="section section--white section--continued" id="products">
+    <div class="wrap products">
+      <div class="section-head">
+        <p class="eyebrow">{{ t.products.eyebrow | escape }}</p>
+        <h2 class="h2">{{ t.products.heading | escape }}</h2>
+        <p class="lead">{{ t.products.intro | escape }}</p>
+      </div>
+      {% for tool in site.data.product_services %}
+      <div class="product-group">
+        <div class="product-group-head">
+          <h3>{{ tool.tool | escape }}</h3>
+          <p class="muted">{{ tool.intro | escape }}</p>
+          {% if tool.links %}<div class="links">{% for l in tool.links %}<a class="link-strong" href="{{ l.url }}">{{ l.label | escape }}</a>{% endfor %}</div>{% endif %}
+        </div>
+        <div class="cards-3">
+          {% for o in tool.offers %}
+          <article class="md-card">
+            <h4>{{ o.title | escape }}</h4>
+            <p>{{ o.text | escape }}</p>
+            {% if o.tags %}<ul class="tags">{% for tag in o.tags %}<li class="md-tag">{{ tag | escape }}</li>{% endfor %}</ul>{% endif %}
+          </article>
+          {% endfor %}
+        </div>
+      </div>
+      {% endfor %}
+      <a class="md-btn md-btn-primary products-cta" href="{{ t.products.cta.url }}">{{ t.products.cta.label | escape }}</a>
     </div>
   </section>
 
