@@ -20,23 +20,14 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      - name: Assemble site
-        run: |
-          mkdir _site
-          rsync -a \
-            --exclude '.git*' \
-            --exclude '.gitlab-ci.yml' \
-            --exclude '_site' \
-            --exclude 'node_modules' \
-            --exclude 'package.json' \
-            --exclude 'package-lock.json' \
-            --exclude 'gruntfile.js' \
-            --exclude 'README' \
-            --exclude '_redirects' \
-            --exclude 'forms' \
-            ./ _site/
-
       - uses: actions/configure-pages@v5
+
+      # Builds the Jekyll site: page texts and lists come from _data/*.yml.
+      - name: Build site
+        uses: actions/jekyll-build-pages@v1
+        with:
+          source: ./
+          destination: ./_site
 
       - uses: actions/upload-pages-artifact@v3
         with:

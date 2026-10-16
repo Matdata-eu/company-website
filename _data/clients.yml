@@ -1,0 +1,47 @@
+# Customers & partners, shown as a logo grid on the homepage (in this order).
+# Add, remove or reorder entries freely. Fields:
+#   name: shown as tooltip and used for the default alt text
+#   url:  where the logo links to
+#   logo: image URL (a file under assets/img/ also works, e.g. /assets/img/clients/acme.svg)
+#   alt:  optional alt text for the logo
+clients:
+  - name: Bane NOR
+    url: https://www.banenor.no/
+    logo: https://upload.wikimedia.org/wikipedia/en/a/ad/Bane_NOR_logo.svg
+    alt: Bane NOR logo
+  - name: ERA
+    url: https://www.era.europa.eu/
+    logo: https://upload.wikimedia.org/wikipedia/en/b/bc/European_Union_Agency_for_Railways_logo.svg
+    alt: ERA - European Union Agency for Railways logo
+  - name: Infrabel
+    url: https://www.infrabel.be/
+    logo: https://upload.wikimedia.org/wikipedia/commons/a/a5/Infrabel_logo.svg
+    alt: Infrabel logo
+  - name: Certifer
+    url: https://www.certifer.eu/
+    logo: https://www.certifer.de/wp-content/uploads/2024/09/00_LOGO_Certifer_Logo_Certifer_Groupe_Apave_FARBIG.jpg/
+    alt: Certifer logo
+  - name: FPS Mobility & Transport Belgium
+    url: https://mobilit.belgium.be
+    logo: https://mobilit.belgium.be/themes/custom/mobility/images/logos/picto-blue.svg
+    alt: FPS Mobility & Transport Belgium logo
+  - name: NSA Belgium
+    url: https://www.nsarail.fgov.be/
+    logo: https://www.nsarail.fgov.be/themes/custom/dvis/logo.svg
+    alt: NSA Belgium logo
+  - name: Transurb
+    url: https://transurb.com/
+    logo: https://www.logisticsinwallonia.be/wp-content/uploads/2024/04/liw-member-5081.png
+    alt: Transurb logo
+  - name: Cognizone
+    url: https://www.cogni.zone/
+    logo: https://www.cogni.zone/wp-content/uploads/2022/04/cropped-cognizone_logo-2048x529.png
+    alt: Cognizone logo
+  - name: Kapernikov
+    url: https://kapernikov.com/
+    logo: https://maintenance.directory/wp-content/uploads/2019/07/Kapernikov_logo_horiz.png
+    alt: Kapernikov logo
+  - name: PwC
+    url: https://www.pwc.com/
+    logo: https://upload.wikimedia.org/wikipedia/commons/c/c3/PwC_Company_Logo.svg
+    alt: PwC logo

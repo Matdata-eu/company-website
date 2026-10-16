@@ -1,0 +1,16 @@
+# The two big cards in the "Expertise" section.
+# icon: track (rails and sleepers) or graph (nodes and edges)
+- title: Railway infrastructure
+  icon: track
+  text: >-
+    I know where the data comes from because I worked next to the track: catenary and
+    measurement systems, work management, asset and network data, GIS — and the organisation
+    that has to keep it all correct.
+  tags: [Asset data, Measurement systems, GIS, Work management]
+- title: Linked Data
+  icon: graph
+  text: >-
+    Ontologies and knowledge graphs that other organisations can reuse: the ERA ontology and
+    RINF, railML, SHACL validation and SPARQL — one identifier per thing, so every system talks
+    about the same station.
+  tags: [ERA ontology, RDF, SHACL, SPARQL, Knowledge graphs]

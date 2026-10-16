@@ -1,0 +1,24 @@
+# Project cards in the "Projects" section.
+# image: a screenshot (put it in assets/img/projects/). Leave it out and set
+# sparql: true to show the SPARQL query panel instead.
+- title: RINF Atlas
+  image: /assets/img/projects/rinf-atlas.png
+  image_alt: "RINF Atlas: a map of Belgian and Dutch infrastructure elements with class, country and infrastructure-manager filters, and the details of one operational point"
+  text: >-
+    A fast map and faceted search over ERA's Register of Infrastructure: operational points,
+    sections of line, tracks, tunnels, platforms and more, with production and test data side by
+    side. Line profiles lay a route out as a strip with speed, electrification, gauge and ETCS level.
+  tags: [RINF, SPARQL, PostGIS, MapLibre]
+  links:
+    - { label: Open RINF Atlas →, url: "https://rinf-atlas.matdata.eu" }
+    - { label: Source on GitHub, url: "https://github.com/Matdata-eu/rinf-atlas" }
+- title: MatGUI
+  sparql: true
+  text: >-
+    A modern knowledge graph and SPARQL workbench: a full query editor with table, graph and map
+    views of the results. It started as a fork of Yasgui and has grown well beyond it; available
+    as a website, on npm and on Docker Hub.
+  tags: [SPARQL, RDF, Knowledge graphs, Open source]
+  links:
+    - { label: Open MatGUI →, url: "https://matgui.matdata.eu/" }
+    - { label: Source on GitHub, url: "https://github.com/Matdata-eu/MatGUI" }

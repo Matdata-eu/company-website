@@ -1,699 +1,273 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-  <!-- Google tag (gtag.js) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-RWDDXPYH3M"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag() { dataLayer.push(arguments); }
-    gtag('js', new Date());
-
-    gtag('config', 'G-RWDDXPYH3M');
-  </script>
-
-  <meta charset="utf-8">
-  <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <title>MatData - data consultancy</title>
-
-  <meta name="description"
-    content="MatData specializes in data consulting services for railway companies, focusing on strategic planning, modeling, and architecture. We also handle development, data engineering, and DevOps challenges.">
-  <meta name="keywords"
-    content="matdata, mathias vanden auweele, railway, data, linked data, rdf, sparql, shacl, railml, era, ontology, architecture, analysis, engineer, gis, devops, scientist, inventor">
-  <meta property="og:site_name" content="MatData" />
-  <meta property="og:type" content="object" />
-  <meta property="og:title" content="MatData" />
-  <meta property="og:url" content="https://matdata.eu/" />
-  <meta property="og:description" content="Who am I?" />
-  <meta property="og:image" content="https://matdata.eu/assets/img/profile-img.jpg" />
-
-  <!-- Favicons -->
-  <link href="assets/img/favicon.png" rel="icon">
-  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
-
-  <!-- Fonts-->
-  <link href="https://fonts.googleapis.com" rel="preconnect">
-  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&amp;family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
-    rel="stylesheet">
-
-  <!-- Vendor CSS Files -->
-  <!--<link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-
-  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
-  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">-->
-
-  <!-- Main CSS File -->
-  <!--<link href="assets/css/main.css" rel="stylesheet">-->
-
-  <!--<link href="assets/vendor/bootstrap-icons/bootstrap-icons.min.css" rel="stylesheet">-->
-  <link href="assets/css/main.css" rel="stylesheet">
-  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
-  <link href="assets/cleancss/tidy.css" rel="stylesheet">
-    
-  <!-- =======================================================
-  * Template Name: MyResume
-  * Template URL: https://bootstrapmade.com/free-html-bootstrap-template-my-resume/
-  * Updated: Jun 29 2024 with Bootstrap v5.3.3
-  * Author: BootstrapMade.com
-  * License: https://bootstrapmade.com/license/
-  ======================================================== -->
-</head>
-
-<body class="index-page">
-
-  <script type="application/ld+json" id="site">
-      {
-        "@context": {
-          "schema": "http://schema.org/"
-        },
-        "@id": "https://matdata.eu/#site",
-        "@type": "schema:WebSite",
-        "schema:about": "MatData",
-        "schema:author": {
-          "@id": "https://matdata.eu/#mathias",
-          "@type": "schema:Person",
-          "schema:name": "Mathias Vanden Auweele",
-          "schema:image": { 
-            "@value": "https://matdata.eu/assets/img/profile-img.jpg",
-            "@type": "schema:URL"
-          }
-        },
-        "schema:creator": { "@id": "https://matdata.eu/#mathias" },
-        "schema:editor": { "@id": "https://matdata.eu/#mathias" },
-        "schema:publisher": { "@id": "https://matdata.eu/#mathias" },
-        "schema:copyrightHolder": { "@id": "https://matdata.eu/#mathias" },
-        "schema:copyrightYear": "2024",
-        "schema:dateCreated": "2024-11-08T09:30:00",
-        "schema:dateModified": "2024-11-08T09:30:00",
-        "schema:datePublished": "2024-11-08T09:30:00",
-        "schema:hasPart": [
-          { "@id": "https://matdata.eu/" },
-          { "@id": "https://matdata.eu/#about" },
-          { "@id": "https://matdata.eu/#resume" },
-          { "@id": "https://matdata.eu/#graph" },
-          { "@id": "https://matdata.eu/#clients" },
-          { "@id": "https://matdata.eu/#contact" }
-        ]
-      }
-    </script>
-  <!-- Root: https://matdata.eu/ -->
+---
+layout: default
+scripts:
+  - /assets/js/network-explorer.js
+---
+{% assign t = site.data.home %}
   <script type="application/ld+json">
-      {
-        "@context": {
-          "schema": "http://schema.org/"
-        },
-        "@id": "https://matdata.eu",
-        "@type": "schema:ProfilePage",
-        "schema:url": "https://matdata.eu",
-        "schema:about": "Mathias Vanden Auweele",
-        "schema:headline": "Mathias Vanden Auweele",
-        "schema:subjectOf": "Mathias Vanden Auweele",
-        "schema:name": "Mathias Vanden Auweele",
-        "schema:mainEntity": {
-          "@type": "schema:Person",
-          "@id": "https://matdata.eu/#mathias"
-        },
-        "schema:author": {
-          "@id": "https://matdata.eu/#mathias",
-          "@type": "schema:Person",
-          "schema:name": "Mathias Vanden Auweele",
-          "schema:image": { 
-            "@value": "https://matdata.eu/assets/img/profile-img.jpg",
-            "@type": "schema:URL"
-          }
-        },
-        "schema:creator": { "@id": "https://matdata.eu/#mathias" },
-        "schema:editor": { "@id": "https://matdata.eu/#mathias" },
-        "schema:publisher": { "@id": "https://matdata.eu/#mathias" },
-        "schema:copyrightHolder": { "@id": "https://matdata.eu/#mathias" },
-        "schema:image": { 
-          "@value": "https://matdata.eu/assets/img/profile-img.jpg",
-          "@type": "schema:URL"
-        },
-        "schema:abstract": "Matdata website about our services and references.",
-        "schema:description": "Matdata website about our services and references.",
-        "schema:dateCreated": "2024-11-08T09:30:00",
-        "schema:dateModified": "2024-11-08T09:30:00",
-        "schema:datePublished": "2024-11-08T09:30:00",
-        "schema:isPartOf": { "@id": "https://matdata.eu/#site" }
-      }
-    </script>
-  <!-- WebID: https://matdata.eu/#mathias -->
-  <script type="application/ld+json" id="mathias">
-      {
-        "@context": {
-          "foaf": "http://xmlns.com/foaf/0.1/",
-          "vcard": "http://www.w3.org/2006/vcard/ns#",
-          "owl": "http://www.w3.org/2002/07/owl#",
-          "dbo": "http://dbpedia.org/ontology#",
-          "knows": "https://data.knows.idlab.ugent.be/person/office/#",
-          "schema": "http://schema.org/",
-          "wdt": "http://www.wikidata.org/prop/direct/"
-        },
+    {
+      "@context": { "schema": "http://schema.org/" },
+      "@id": "https://matdata.eu/#site",
+      "@type": "schema:WebSite",
+      "schema:about": "MatData",
+      "schema:author": {
         "@id": "https://matdata.eu/#mathias",
-        "@type": [
-          "foaf:Person",
-          "schema:Person"
-        ],
-        "wdt:P4033": { "@id": "https://mastodon.social/@mathiasvda" },
-        "owl:sameAs": [
-          { "@id": "https://w3id.org/people/mathiasvda/#mathias", "@type": "schema:Person" }
-        ],
-        "vcard:title": "Data freelancer",
-        "vcard:fn": [
-          {
-              "@value": "Mathias Vanden Auweele",
-              "@language": "en"
-          },
-          {
-              "@value": "Mathias Vanden Auweele",
-              "@language": "nl"
-          }
-        ],
-        "vcard:given-name": [
-          {
-              "@value": "Mathias",
-              "@language": "en"
-          },
-          {
-              "@value": "Mathias",
-              "@language": "nl"
-          }
-        ],
-        "vcard:family-name": [
-          {
-              "@value": "Vanden Auweele",
-              "@language": "en"
-          },
-          {
-              "@value": "Vanden Auweele",
-              "@language": "nl"
-          }
-        ],
-        "vcard:hasPhoto": "https://matdata.eu/assets/img/profile-img.jpg",
-        "vcard:hasEmail": "mailto:mathias@matdata.eu",
-        "vcard:hasAddress": "https://data.vlaanderen.be/doc/adres/3891100",
-        "vcard:role": "Railway data freelancer",
-        "vcard:organization-name": "MatData",
-        "foaf:name": [
-          {
-              "@value": "Mathias Vanden Auweele",
-              "@language": "en"
-          },
-          {
-              "@value": "Mathias Vanden Auweele",
-              "@language": "nl"
-          }
-        ],
-        "foaf:givenName": [
-          {
-              "@value": "Mathias",
-              "@language": "en"
-          },
-          {
-              "@value": "Mathias",
-              "@language": "nl"
-          }
-        ],
-        "foaf:familyName": [
-          {
-              "@value": "Vanden Auweele",
-              "@language": "en"
-          },
-          {
-              "@value": "Vanden Auweele",
-              "@language": "nl"
-          }
-        ],
-        "foaf:mbox": { 
-          "@id": "mailto:mathias@matdata.eu",
-          "@type": "owl:Thing"
-        },
-        "foaf:img": { 
-          "@id": "https://matdata.eu/assets/img/profile-img.jpg",
-          "@type": "foaf:Image"
-        },
-        "schema:jobTitle": "Railway data freelancer",
-        "schema:worksFor": { "@id": "https://matdata.eu", "@type": "schema:Organization" },
+        "@type": "schema:Person",
+        "schema:name": "Mathias Vanden Auweele",
+        "schema:image": { "@value": "https://matdata.eu/assets/img/profile-img.jpg", "@type": "schema:URL" }
+      },
+      "schema:creator": { "@id": "https://matdata.eu/#mathias" },
+      "schema:editor": { "@id": "https://matdata.eu/#mathias" },
+      "schema:publisher": { "@id": "https://matdata.eu/#mathias" },
+      "schema:copyrightHolder": { "@id": "https://matdata.eu/#mathias" },
+      "schema:copyrightYear": "2024",
+      "schema:dateCreated": "2024-11-08T09:30:00",
+      "schema:datePublished": "2024-11-08T09:30:00",
+      "schema:dateModified": "{{ site.time | date: '%Y-%m-%dT%H:%M:%S' }}",
+      "schema:hasPart": [
+        { "@id": "https://matdata.eu/" },
+        { "@id": "https://matdata.eu/#services" },
+        { "@id": "https://matdata.eu/#projects" },
+        { "@id": "https://matdata.eu/#talks" },
+        { "@id": "https://matdata.eu/#clients" },
+        { "@id": "https://matdata.eu/#about" },
+        { "@id": "https://matdata.eu/#contact" }
+      ]
+    }
+  </script>
+  <script type="application/ld+json">
+    {
+      "@context": { "schema": "http://schema.org/" },
+      "@id": "https://matdata.eu",
+      "@type": "schema:ProfilePage",
+      "schema:url": "https://matdata.eu",
+      "schema:name": "Mathias Vanden Auweele",
+      "schema:headline": "Mathias Vanden Auweele",
+      "schema:about": "Mathias Vanden Auweele",
+      "schema:mainEntity": {
+        "@id": "https://matdata.eu/#mathias",
+        "@type": "schema:Person",
         "schema:name": "Mathias Vanden Auweele",
         "schema:givenName": "Mathias",
         "schema:familyName": "Vanden Auweele",
         "schema:email": "mathias@matdata.eu",
-        "schema:affiliation": "Matdata",
-        "schema:image": { 
-          "@value": "https://matdata.eu/assets/img/profile-img.jpg",
-          "@type": "schema:URL"
-        },
-        "schema:url": { "@id": "https://matdata.eu/", "@type": "schema:URL" },
-        "schema:identifier": { "@id": "https://matdata.eu/#mathias", "@type": "schema:URL" }
+        "schema:affiliation": "MatData",
+        "schema:worksFor": { "@id": "https://matdata.eu", "@type": "schema:Organization" },
+        "schema:image": { "@value": "https://matdata.eu/assets/img/profile-img.jpg", "@type": "schema:URL" },
+        "schema:url": { "@id": "https://matdata.eu/", "@type": "schema:URL" }
       }
-    </script>
-
-  <script>
-    document.addEventListener('DOMContentLoaded', function () {
-      var email = 'info' + '@' + 'matdata.eu';
-      var emailLinks = document.querySelectorAll('.email-obfuscate');
-      emailLinks.forEach(function (link) {
-        link.href = 'mailto:' + email;
-      });
-    });
+    }
   </script>
 
-  <header id="header" class="header d-flex flex-column justify-content-center">
-
-    <i class="header-toggle d-xl-none bi bi-list"></i>
-
-    <nav id="navmenu" class="navmenu">
-      <ul>
-        <li><a href="#hero" class="active"><i class="bi bi-house navicon"></i><span>Home</span></a></li>
-        <li><a href="#about"><i class="bi bi-person navicon"></i><span>About</span></a></li>
-        <li><a href="#resume"><i class="bi bi-file-earmark-text navicon"></i><span>Resume</span></a></li>
-        <li><a href="#graph"><i class="bi bi-globe navicon"></i><span>Expertise</span></a></li>
-        <li><a href="#clients"><i class="bi bi-people navicon"></i><span>Customers</span></a></li>
-        <li><a href="#contact"><i class="bi bi-envelope navicon"></i><span>Contact</span></a></li>
-      </ul>
-    </nav>
-
-  </header>
-
-  <main class="main">
-
-    <!-- Hero Section -->
-    <section id="hero" class="hero section light-background">
-
-      <img src="assets/img/hero-bg.jpg"
-        alt="Mathias Vanden Auweele presenting at the ERA Railway Data Forum 2024 in Verona">
-
-      <div class="container" data-aos="zoom-out">
-        <div class="row justify-content-center">
-          <div class="col-lg-9">
-            <h1>MatData</h1>
-            <h3>Mathias Vanden Auweele</h3>
-            <p><span class="typed"
-                data-typed-items="Data strategist, Linked data expert, Data engineer, Data architect, DevOps engineer, GIS expert, Railway specialist">Railway data
-                freelancer</span></p>
-            <div class="social-links">
-              <a href="https://www.linkedin.com/in/mathiasvda/" target="_blank" aria-label="Visit LinkedIn profile"><i class="bi bi-linkedin"
-                  title="LinkedIn" alt="LinkedIn icon"></i></a>
-              <a href="https://github.com/MathiasVDA" target="_blank" aria-label="Visit GitHub profile"><i class="bi bi-github" 
-                  title="GitHub" alt="GitHub icon"></i></a>
-              <a href="https://gitlab.com/mathias.vanden.auweele" target="_blank" aria-label="Visit GitLab profile"><i class="bi bi-gitlab"
-                  title="GitLab" alt="GitLab icon"></i></a>
-              <a href="https://mastodon.social/@mathiasvda" target="_blank" aria-label="Visit Mastodon profile"><i class="bi bi-mastodon"
-                  title="Mastodon" alt="Mastodon icon"></i></a>
-              <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank" aria-label="Visit Reddit profile"><i class="bi bi-reddit"
-                  title="Reddit" alt="Reddit icon"></i></a>
-              <a href="#" class="email-obfuscate" aria-label="Send email"><i class="bi bi-envelope-at-fill" 
-                  title="E-mail" alt="Email icon"></i></a>
-            </div>
-          </div>
-        </div>
-      </div>
-
-    </section><!-- /Hero Section -->
-
-    <!-- About Section -->
-    <section id="about" class="about section">
-
-      <!-- Section Title -->
-      <div class="container section-title" data-aos="fade-up">
-        <h2>About</h2>
-        <p><strong>MatData</strong> specializes in data consulting services for railway companies, focusing on strategic
-          planning,
-          modeling, and
-          architecture. We also handle development, data engineering, and DevOps challenges. Our expertise is rooted in
-          a deep
-          understanding of the railway system, an extensive industry network, and proficiency in standardization
-          techniques like
-          Linked Data.</p>
-        <p>We offer courses and workshops to enhance your team's knowledge of railway and data topics. With over 15
-          years of
-          experience in railway infrastructure data strategy, GIS data science, and the design and development of
-          measurement
-          systems, we have tackled a wide range of data problems.</p>
-        <p>MatData actively participates in international initiatives such as railML, Openrail, and ERA ontology,
-          ensuring we stay
-          at the forefront of industry standards and innovations.</p>
-      </div><!-- End Section Title -->
-
-      <div class="container" data-aos="fade-up" data-aos-delay="100">
-
-        <div class="row gy-4 justify-content-center">
-          <div class="col-lg-4">
-            <img src="assets/img/profile-img-400.jpg" class="img-fluid" alt="Mathias Vanden Auweele profile image">
-          </div>
-          <div class="col-lg-8 content">
-            <h2>Railway data freelancer</h2>
-            <p class="fst-italic py-3">
-            </p>
-            <div class="row">
-              <div class="col-lg-6">
-                <ul>
-                  <li><i class="bi bi-calendar-date-fill"></i> <strong>Birthyear:</strong> <span>1985</span></li>
-                  <li><i class="bi bi-folder-symlink-fill"></i> <strong>Website:</strong> <span>www.matdata.eu</span>
-                  </li>
-                  <li><i class="bi bi-phone-fill"></i> <strong>Phone:</strong> <span>+32 491 16 16 88</span></li>
-                  <li><i class="bi bi-house-door-fill"></i> <strong>City:</strong> <span>Between Brussels and Leuven,
-                      Belgium</span></li>
-                </ul>
-              </div>
-              <div class="col-lg-6">
-                <ul>
-                  <li><i class="bi bi-suit-heart-fill"></i> <strong>Age:</strong> <span id="age">39</span></li>
-                  <li><i class="bi bi-patch-check-fill"></i> <strong>Degree:</strong> <span>Master in engineering</span>
-                  </li>
-                  <li><i class="bi bi-mailbox2-flag"></i> <strong>Email:</strong> <span class="email-obfuscate"></span>
-                  </li>
-                  <li><i class="bi bi-file-person-fill"></i> <strong>Freelance:</strong> <span>Available</span></li>
-                </ul>
-              </div>
-            </div>
-            <p class="py-3">
-            </p>
-          </div>
-        </div>
-
-      </div>
-
-    </section><!-- /About Section -->
-
-    <!-- Stats Section -->
-    <section id="stats" class="stats section">
-
-      <div class="container" data-aos="fade-up" data-aos-delay="100">
-
-        <div class="row gy-4">
-
-          <div class="col-lg-3 col-md-6 d-flex flex-column align-items-center">
-            <i class="bi bi-emoji-smile"></i>
-            <div class="stats-item">
-              <span data-purecounter-start="0" data-purecounter-end="16" data-purecounter-duration="1"
-                class="purecounter"></span>
-              <p>Years of experience</p>
-            </div>
-          </div><!-- End Stats Item -->
-
-          <div class="col-lg-3 col-md-6 d-flex flex-column align-items-center">
-            <i class="bi bi-journal-richtext"></i>
-            <div class="stats-item">
-              <span data-purecounter-start="0" data-purecounter-end="76" data-purecounter-duration="1"
-                class="purecounter"></span>
-              <p>Feat. projects</p>
-            </div>
-          </div><!-- End Stats Item -->
-
-          <div class="col-lg-3 col-md-6 d-flex flex-column align-items-center">
-            <i class="bi bi-headset"></i>
-            <div class="stats-item">
-              <span data-purecounter-start="0" data-purecounter-end="1463" data-purecounter-duration="1"
-                class="purecounter"></span>
-              <p>Ideas</p>
-            </div>
-          </div><!-- End Stats Item -->
-
-          <div class="col-lg-3 col-md-6 d-flex flex-column align-items-center">
-            <i class="bi bi-people"></i>
-            <div class="stats-item">
-              <span data-purecounter-start="0" data-purecounter-end="2" data-purecounter-duration="1"
-                class="purecounter"></span>
-              <p>Kids</p>
-            </div>
-          </div><!-- End Stats Item -->
-
-        </div>
-
-      </div>
-
-    </section><!-- /Stats Section -->
-
-
-    <!-- Resume Section -->
-    <section id="resume" class="resume section">
-
-      <!-- Section Title -->
-      <div class="container section-title" data-aos="fade-up">
-        <h2>Resume</h2>
-        <a>Below you can find a summary of my resume. A more detailed resume is available on <a
-            href="https://expertise.matdata.eu" target="_blank"></a>my expertise graph</a>, my <a
-          href="https://www.linkedin.com/in/mathiasvda/" target="_blank">my LinkedIn profile</a> or as <a
-          href="https://expertise.matdata.eu/static/Mathias_Vanden_Auweele_CV.pdf" target="_blank">pdf file</a>.</p>
-      </div><!-- End Section Title -->
-
-      <div class="container">
-
-        <div class="row">
-
-          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
-            <h3 class="resume-title">Summary</h3>
-
-            <div class="resume-item pb-0">
-              <h4>Mathias Vanden Auweele</h4>
-              <p><em>Innovative railway data freelancer with over 15 years of experience developing
-                  user-centered and data-centric IT systems. Starting from business idea and going all the way to a
-                  solution in production and even beyond.</em>
-              </p>
-            </div><!-- Edn Resume Item -->
-
-            <h3 class="resume-title">Education</h3>
-            <div class="resume-item">
-              <h4>Master in engineering, energy</h4>
-              <h5>2007 - 2009</h5>
-              <p><em>KULeuven, Belgium</em></p>
-              <p>Completed magna cum laude.</p>
-            </div><!-- Edn Resume Item -->
-
-            <div class="resume-item">
-              <h4>Master in industrial engineering, electromechanics</h5>
-                <h5>2003 - 2007</h5>
-                <p><em>GroepT Leuven, Belgium</em></p>
-                <p>Completed magna cum laude.</p>
-            </div><!-- Edn Resume Item -->
-
-          </div>
-
-          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
-            <h3 class="resume-title">Professional Experience</h3>
-
-            <div class="resume-item">
-              <h4>Teamlead data centricity</h4>
-              <h5>2022 - 2025</h5>
-              <p><em>Infrabel, Brussels, Belgium</em></p>
-              <ul>
-                <li>Lead the migration toward a data centric software landscape </li>
-                <li>Be the data single point of contact for a department of 9000+ employees </li>
-                <li>Steer the application landscape and implement the digital strategy </li>
-                <li>Manage and improve the data quality </li>
-                <li>Portfolio manager for data projects </li>
-              </ul>
-            </div>
-
-            <div class="resume-item">
-              <h4>Project lead digitalisation</h4>
-              <h5>2020 - 2022</h5>
-              <p><em>Infrabel, Brussels, Belgium</em></p>
-              <ul>
-                <li>Design and produce innovative digital solutions to improve the different activities of Infrabel
-                  Operations (maintenance, construction, operation, logistics, ...)</li>
-              </ul>
-            </div>
-
-            <div class="resume-item">
-              <h4>Project lead strategic project reporting</h4>
-              <h5>2017 - 2020</h5>
-              <p><em>Infrabel, Brussels, Belgium</em></p>
-              <ul>
-                <li>Align the innovation projects with the internal strategic vision</li>
-                <li>Project prioritisation and portfolio management</li>
-                <li>Implement a strategic project/program reporting system</li>
-                <li>Setup a PMO office</li>
-              </ul>
-            </div>
-
-            <div class="resume-item">
-              <h4>Engineer catenary data cell</h4>
-              <h5>2009 - 2017</h5>
-              <p><em>Infrabel, Brussels, Belgium</em></p>
-              <ul>
-                <li>Responsible for OCL measurement systems & all related IT</li>
-                <li>Responsible for work management system of catenary</li>
-                <li>Expand the technical inventory and develop supporting tools</li>
-                <li>Participation in CEN/CENELEC and EIM/ERA working groups</li>
-                <li>Uniformisation of the catenary design principles</li>
-              </ul>
-            </div>
-          </div>
-
-        </div>
-
-      </div>
-
-    </section><!-- /Resume Section -->
-
-    <!-- Portfolio Section -->
-    <section id="graph" class="portfolio section">
-
-      <!-- Section Title -->
-      <div class="container section-title" data-aos="fade-up">
-        <h2>My expertise</h2>
-        <a>You can find <a href="https://expertise.matdata.eu/" target="_blank">my expertise graph here</a>! The graph
-          contains more details about some of my projects and the techniques used. It's a real linked data graph.</p>
-      </div><!-- End Section Title -->
-
-          </section><!-- /Portfolio Section -->
-
-    <!-- Customers & Partners Section -->
-    <section id="clients" class="clients section light-background">
-
-      <div class="container section-title" data-aos="fade-up">
-        <h2>Customers & Partners</h2>
-        <p>Proud to have worked with and alongside these organizations.</p>
-      </div>
-
-      <div class="container" data-aos="fade-up" data-aos-delay="100">
-        <div class="row gy-4 justify-content-center align-items-center text-center" id="clients-grid">
-          <!-- Populated from YAML -->
-        </div>
-      </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section id="contact" class="contact section">
-
-      <!-- Section Title -->
-      <div class="container section-title" data-aos="fade-up">
-        <h2>Contact</h2>
-        <p>Feel free to get into contact with me, using any of the methods below.</p>
-      </div><!-- End Section Title -->
-
-      <div class="container" data-aos="fade" data-aos-delay="100">
-
-        <div class="row gy-4">
-
-          <div class="col-lg-4">
-            <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="200">
-              <i class="bi bi-geo-alt flex-shrink-0"></i>
-              <div>
-                <h3>Address</h3>
-                <p>Bogaertstraat 11</br>
-                  1910 Kampenhout</br>
-                  Belgium</p>
-              </div>
-            </div><!-- End Info Item -->
-
-            <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="300">
-              <i class="bi bi-telephone flex-shrink-0"></i>
-              <div>
-                <h3>Call Me</h3>
-                <p>+32 491 16 16 88</p>
-              </div>
-            </div><!-- End Info Item -->
-
-            <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="400">
-              <i class="bi bi-envelope flex-shrink-0"></i>
-              <div>
-                <h3>Email Me</h3>
-                <p><a href="#" class="email-obfuscate">Click for e-mail</a></p>
-              </div>
-            </div><!-- End Info Item -->
-
-            <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="400">
-              <i class="bi bi-envelope flex-shrink-0"></i>
-              <div>
-                <h3>Company number</h3>
-                <p><a
-                    href="https://kbopub.economie.fgov.be/kbopub/zoeknummerform.html?lang=en&nummer=1015.480.825&actionLu=Zoek"
-                    target="_blank">VAT BE 1015.480.825</a></p>
-              </div>
-            </div><!-- End Info Item -->
-
-            <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="400">
-              <i class="bi bi-github flex-shrink-1"></i>
-              <div>
-                <h3>Github</h3>
-                <p><a href="https://github.com/MathiasVDA" target="_blank">https://github.com/MathiasVDA</a></p>
-              </div>
-            </div><!-- End Info Item -->
-
-            <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="400">
-              <i class="bi bi-gitlab flex-shrink-1"></i>
-              <div>
-                <h3>Gitlab</h3>
-                <p><a href="https://gitlab.com/mathias.vanden.auweele"
-                    target="_blank">https://gitlab.com/mathias.vanden.auweele</a></p>
-              </div>
-            </div><!-- End Info Item -->
-
-          </div>
-
-        </div>
-
-    </section><!-- /Contact Section -->
-
-  </main>
-
-  <footer id="footer" class="footer position-relative light-background">
-    <div class="container">
-      <h3 class="sitename">MatData</h3>
-      <p>Hi, I'm Mathias, welcome to the website of my company MatData. How can I help you?</p>
-      <div class="social-links d-flex justify-content-center">
-        <a href="https://www.linkedin.com/in/mathiasvda/" target="_blank" aria-label="Visit LinkedIn profile"><i class="bi bi-linkedin"
-            title="LinkedIn" alt="LinkedIn icon"></i></a>
-        <a href="https://github.com/MathiasVDA" target="_blank" aria-label="Visit GitHub profile"><i class="bi bi-github" 
-            title="GitHub" alt="GitHub icon"></i></a>
-        <a href="https://gitlab.com/mathias.vanden.auweele" target="_blank" aria-label="Visit GitLab profile"><i class="bi bi-gitlab"
-            title="GitLab" alt="GitLab icon"></i></a>
-        <a href="https://mastodon.social/@mathiasvda" target="_blank" aria-label="Visit Mastodon profile"><i class="bi bi-mastodon"
-            title="Mastodon" alt="Mastodon icon"></i></a>
-        <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank" aria-label="Visit Reddit profile"><i class="bi bi-reddit"
-            title="Reddit" alt="Reddit icon"></i></a>
-        <a href="#" class="email-obfuscate" aria-label="Send email"><i class="bi bi-envelope-at-fill" 
-            title="E-mail" alt="Email icon"></i></a>
-      </div>
-      <div class="container">
-        <div class="copyright">
-          <span>Copyright</span> <strong class="px-1 sitename">MatData</strong> <span>VAT BE 1015.480.825</span>
-          <span>All Rights Reserved</span>
-        </div>
-        <div class="credits">
-          <!-- All the links in the footer should remain intact. -->
-          <!-- You can delete the links only if you've purchased the pro version. -->
-          <!-- Licensing information: https://bootstrapmade.com/license/ -->
-          <!-- Purchase the pro version with working PHP/AJAX contact form: [buy-url] -->
-          Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
-          <a href="404.html">404 Page</a>
-          <a href="privacy.html">Privacy Statement</a>
+  <!-- Hero -->
+  <section class="hero" id="top">
+    <div class="wrap hero-inner">
+      <div class="hero-copy">
+        <h1>{{ t.hero.heading | escape }}</h1>
+        <p class="hero-typed" aria-label="{{ t.hero.greeting | escape }} {{ site.data.roles | join: ', ' | escape }}."><span aria-hidden="true">{{ t.hero.greeting | escape }} <span class="role" data-roles="{{ site.data.roles | jsonify | escape }}">{{ site.data.roles.first | escape }}</span><span class="caret"></span></span></p>
+        <p class="hero-intro">{{ t.hero.intro | escape }}</p>
+        <div class="hero-ctas">
+          <a class="md-btn md-btn-primary md-btn-lg" href="{{ t.hero.primary_cta.url }}">{{ t.hero.primary_cta.label | escape }} <span class="md-arrow" aria-hidden="true">→</span></a>
+          <a class="md-btn md-btn-ghost md-btn-lg" href="{{ t.hero.secondary_cta.url }}">{{ t.hero.secondary_cta.label | escape }}</a>
         </div>
       </div>
     </div>
-  </footer>
+    <img class="hero-img" src="{{ t.hero.image | relative_url }}" alt="{{ t.hero.image_alt | escape }}" width="1366" height="768">
+  </section>
 
-  <!-- Scroll Top -->
-  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i
-      class="bi bi-arrow-up-short"></i></a>
+  <!-- Proof strip -->
+  <section class="proof" aria-label="Credentials">
+    <div class="wrap">
+      {% for c in site.data.credentials %}{% if c.tags %}
+      <div class="proof-item proof-item--tags">
+        <span>{{ c.text | escape }}</span>
+        <ul class="tags">{% for tag in c.tags %}<li class="md-tag">{{ tag | escape }}</li>{% endfor %}</ul>
+      </div>{% else %}
+      <div class="proof-item">
+        <span class="md-line{% if c.marker.amber %} md-line-amber{% endif %}"><span class="md-line-id">{{ c.marker.id | escape }}</span><span class="md-line-km">{{ c.marker.km | escape }}</span></span>
+        <span>{{ c.text | escape }}</span>
+      </div>{% endif %}{% endfor %}
+    </div>
+  </section>
 
-  <!-- Preloader -->
-  <div id="preloader"></div>
+  <!-- Two specialisms -->
+  <section class="section section--white" id="expertise">
+    <div class="wrap expertise">
+      <div class="section-head">
+        <p class="eyebrow">{{ t.expertise.eyebrow | escape }}</p>
+        <h2 class="h2">{{ t.expertise.heading | escape }}</h2>
+        <p class="lead">{{ t.expertise.intro | escape }}</p>
+      </div>
+      <div class="cards-2">
+        {% for s in site.data.specialisms %}
+        <article class="specialism">
+          {% if s.icon == 'graph' %}<div class="graph-rule" aria-hidden="true"><span class="n"></span><span class="e"></span><span class="n"></span><span class="e"></span><span class="n n-solid"></span></div>{% else %}<div class="md-track" aria-hidden="true"></div>{% endif %}
+          <h3>{{ s.title | escape }}</h3>
+          <p class="muted">{{ s.text | escape }}</p>
+          <ul class="tags">{% for tag in s.tags %}<li class="md-tag">{{ tag | escape }}</li>{% endfor %}</ul>
+        </article>
+        {% endfor %}
+      </div>
+    </div>
+  </section>
 
-  <!-- Vendor JS Files -->
-  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/vendor/php-email-form/validate.js"></script>
-  <script src="assets/vendor/aos/aos.js"></script>
-  <script src="assets/vendor/typed.js/typed.umd.js"></script>
-  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
-  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
-  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
-  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
-  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <!-- Services -->
+  <section class="section" id="services">
+    <div class="wrap services">
+      <div class="section-head">
+        <p class="eyebrow">{{ t.services.eyebrow | escape }}</p>
+        <h2 class="h2">{{ t.services.heading | escape }}</h2>
+      </div>
+      <div class="cards-4">
+        {% for s in site.data.services %}
+        <article class="md-card">
+          <h3>{{ s.title | escape }}</h3>
+          <p>{{ s.text | escape }}</p>
+          {% if s.tags %}<ul class="tags">{% for tag in s.tags %}<li class="md-tag">{{ tag | escape }}</li>{% endfor %}</ul>{% endif %}
+        </article>
+        {% endfor %}
+      </div>
+    </div>
+  </section>
 
-  <!-- YAML parser -->
-  <script src="https://cdn.jsdelivr.net/npm/js-yaml@4.1.0/dist/js-yaml.min.js"></script>
+  <!-- Projects -->
+  <section class="section section--white" id="projects">
+    <div class="wrap projects">
+      <div class="section-head">
+        <p class="eyebrow">{{ t.projects.eyebrow | escape }}</p>
+        <h2 class="h2">{{ t.projects.heading | escape }}</h2>
+        <p class="lead">{{ t.projects.intro | escape }}</p>
+        <a class="link-strong" href="{{ t.projects.all_link.url }}">{{ t.projects.all_link.label | escape }}</a>
+      </div>
+      <div class="cards-projects">
+        {% for p in site.data.projects %}
+        <article class="project">
+          {% if p.image %}<img class="project-img" src="{{ p.image | relative_url }}" alt="{{ p.image_alt | escape }}" loading="lazy" width="1440" height="900">{% elsif p.sparql %}<div class="project-sparql" aria-hidden="true"><span><span class="k">PREFIX</span> era: <span class="i">&lt;http://data.europa.eu/949/&gt;</span></span>
+<span> </span>
+<span><span class="k">SELECT</span> ?op <span class="k">WHERE</span> {</span>
+<span>  ?op <span class="k">a</span> <span class="i">era:OperationalPoint</span> .</span>
+<span>}</span>
+<span><span class="k">LIMIT</span> 10</span></div>{% endif %}
+          <div class="project-body">
+            <h3>{{ p.title | escape }}</h3>
+            <p class="muted">{{ p.text | escape }}</p>
+            {% if p.tags %}<ul class="tags">{% for tag in p.tags %}<li class="md-tag">{{ tag | escape }}</li>{% endfor %}</ul>{% endif %}
+            {% if p.links %}<div class="links">{% for l in p.links %}<a class="link-strong" href="{{ l.url }}">{{ l.label | escape }}</a>{% endfor %}</div>{% endif %}
+          </div>
+        </article>
+        {% endfor %}
+      </div>
+    </div>
+  </section>
 
-  <!-- Main JS File -->
-  <script src="assets/js/main.js"></script>
-</body>
+  <!-- Linked Data example -->
+  <section class="section" aria-labelledby="example">
+    <div class="wrap split example">
+      <div class="example-copy">
+        <p class="eyebrow">{{ t.example.eyebrow | escape }}</p>
+        <h2 class="h2" id="example">{{ t.example.heading | escape }}</h2>
+        {% for para in t.example.paragraphs %}<p class="{% if forloop.first %}lead{% else %}muted{% endif %}">{{ para | escape }}</p>
+        {% endfor %}
+      </div>
+      <div class="example-figure">
+        {% include network-explorer.html %}
+      </div>
+    </div>
+  </section>
 
-</html>
+  <!-- Track record -->
+  <section class="section section--white" id="track-record">
+    <div class="wrap split">
+      <div class="timeline-intro">
+        <p class="eyebrow">{{ t.track_record.eyebrow | escape }}</p>
+        <h2 class="h2">{{ t.track_record.heading | escape }}</h2>
+        <p class="muted">{{ t.track_record.intro | escape }}</p>
+        <a class="md-btn" href="{{ t.track_record.cv.url }}">{{ t.track_record.cv.label | escape }}</a>
+      </div>
+      <ol class="timeline">
+        {% for job in site.data.career %}
+        <li>
+          <span><span class="md-line{% if job.current %} md-line-amber{% endif %}"><span class="md-line-id">{{ job.id | escape }}</span><span class="md-line-km">{{ job.km | escape }}</span></span></span>
+          <div><h3>{{ job.title | escape }}</h3>{% if job.text %}<p>{{ job.text | escape }}</p>{% endif %}</div>
+        </li>
+        {% endfor %}
+      </ol>
+    </div>
+  </section>
+
+  <!-- Talks -->
+  <section class="section" id="talks">
+    <div class="wrap split">
+      <div class="timeline-intro">
+        <p class="eyebrow">{{ t.talks.eyebrow | escape }}</p>
+        <h2 class="h2">{{ t.talks.heading | escape }}</h2>
+        <p class="muted">{{ t.talks.intro | escape }}</p>
+      </div>
+      <ol class="timeline timeline--talks">
+        {% for talk in site.data.talks %}
+        <li>
+          <div class="talk-when">{% if talk.date and talk.date != '' %}<span>{{ talk.date | escape }}</span>{% endif %}{% if talk.upcoming %}<span class="badge-upcoming">Upcoming</span>{% endif %}</div>
+          <div>
+            <h3>{{ talk.title | escape }}</h3>
+            {% if talk.text %}<p>{{ talk.text | escape }}</p>{% endif %}
+            {% if talk.slides %}<a class="talk-slides" href="{{ talk.slides }}">Slides →</a>{% endif %}
+          </div>
+        </li>
+        {% endfor %}
+      </ol>
+    </div>
+  </section>
+
+  <!-- Customers & partners -->
+  <section class="section--white" id="clients" aria-labelledby="clients-title">
+    <div class="wrap clients">
+      <h2 class="clients-title" id="clients-title">{{ t.clients.heading | escape }}</h2>
+      <ul class="clients-grid">
+        {% for c in site.data.clients.clients %}
+        <li><a class="client" href="{{ c.url }}" title="{{ c.name | escape }}" rel="noopener" target="_blank"><img src="{{ c.logo | relative_url }}" alt="{% if c.alt %}{{ c.alt | escape }}{% else %}{{ c.name | escape }} logo{% endif %}" loading="lazy"></a></li>
+        {% endfor %}
+      </ul>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section class="section" id="about">
+    <div class="wrap split about">
+      <figure class="about-figure">
+        <img src="{{ t.about.image | relative_url }}" alt="{{ t.about.image_alt | escape }}" loading="lazy" width="400" height="600">
+      </figure>
+      <div class="about-copy">
+        <p class="eyebrow">{{ t.about.eyebrow | escape }}</p>
+        <h2 class="h2">{{ t.about.heading | escape }}</h2>
+        <p class="about-text">{{ t.about.text | escape }}</p>
+        <p class="muted">{{ t.about.location | escape }}</p>
+        <div class="links">{% for s in site.data.social %}<a class="link-strong" href="{{ s.url }}">{{ s.label | escape }}</a>{% endfor %}</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  {% assign c = t.contact %}
+  <section class="section contact" id="contact">
+    <div class="wrap split">
+      <div class="contact-copy">
+        <p class="eyebrow">{{ c.eyebrow | escape }}</p>
+        <h2>{{ c.heading | escape }}</h2>
+        <p class="contact-intro">{{ c.intro | escape }}</p>
+        <dl class="contact-details">
+          {% for d in c.details %}<dt>{{ d.label | escape }}</dt><dd>{% if d.dot %}<span class="status-dot" aria-hidden="true"></span>{% endif %}{{ d.value | escape }}</dd>
+          {% endfor %}
+        </dl>
+      </div>
+      <div class="contact-actions">
+        <a class="contact-card contact-card--primary" href="#contact" data-email-user="{{ c.email_user }}" data-email-domain="{{ c.email_domain }}" data-email-subject="{{ c.email_subject | escape }}">
+          <span class="contact-card-text"><span class="contact-card-title">{{ c.email_label | escape }}</span><span class="contact-card-note" data-email-text=" — {{ c.email_note | escape }}">{{ c.email_user }} at {{ c.email_domain }} — {{ c.email_note | escape }}</span></span>
+          <span class="contact-card-arrow" aria-hidden="true">→</span>
+        </a>
+        <a class="contact-card contact-card--secondary" href="{{ c.linkedin_url }}">
+          <span class="contact-card-text"><span class="contact-card-title">{{ c.linkedin_label | escape }}</span><span class="contact-card-note">{{ c.linkedin_note | escape }}</span></span>
+          <span class="contact-card-arrow" aria-hidden="true">→</span>
+        </a>
+      </div>
+    </div>
+  </section>

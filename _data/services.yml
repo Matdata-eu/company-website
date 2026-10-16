@@ -1,0 +1,13 @@
+# Service cards in the "Services" section.
+- title: Data strategy & architecture
+  text: A data strategy and target architecture that fit how a railway actually runs — application landscape, ownership, portfolio.
+  tags: [Roadmaps, Governance]
+- title: Ontologies & Linked Data
+  text: Semantic models aligned with the ERA ontology and railML, published as reusable, validated knowledge graphs.
+  tags: [ERA ontology, railML]
+- title: Data engineering & migration
+  text: Pipelines, data migrations and data-quality checks, built and run with DevOps practices until they are boring.
+  tags: [Data quality, DevOps]
+- title: Courses & workshops
+  text: Hands-on Linked Data courses and modelling workshops so your own team can carry the work forward.
+  tags: [Linked Data, Teams]

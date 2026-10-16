@@ -1,0 +1,17 @@
+# The animated "One network, seven views" explorer in the Linked Data section.
+# The texts are editable here; `view` picks the drawing (elements, relations, graph,
+# schematic, geographic, meso, macro), which lives in assets/js/network-explorer.js.
+title: One network, seven views
+start: 3            # the view shown first (0 = Elements)
+interval: 4200      # milliseconds per view while the tour plays
+play_label: Play tour
+pause_label: Pause tour
+source: { label: 'From the talk "One network, one truth" — open the slides', url: "https://matdata-eu.github.io/slides-railway-topology/" }
+steps:
+  - { view: elements, label: Elements, title: Net elements, sub: "Abstract building blocks: no position, no shape. Every linear element has an origin (0) and an end (1).", badge: "topology: net elements" }
+  - { view: relations, label: Relations, title: Net relations, sub: "Directed from element A to element B, with a navigability: Both · AB · BA · None. This is the topology graph.", badge: "topology: net relations" }
+  - { view: graph, label: Graph, title: Topology graph ≠ knowledge graph, sub: "In RDF, net elements and net relations are both nodes; elementA and elementB are triples of their own.", badge: "RDF: relations are nodes too" }
+  - { view: schematic, label: Schematic, title: "Representation: schematic", sub: "The same net elements get a schematic geometry. The topology does not change.", badge: "positioning: schematic x/y" }
+  - { view: geographic, label: Geographic, title: "Representation: geographic", sub: "And a geographic geometry. Same elements, same relations, another view.", badge: "positioning: geographic" }
+  - { view: meso, label: Meso, title: "Aggregation: meso level", sub: "The station tracks collapse into one operational point, with a section of line on each side.", badge: "network level: meso" }
+  - { view: macro, label: Macro, title: "Aggregation: macro level", sub: "The national line remains with its start and end stations, junctions and interchange stations.", badge: "network level: macro" }
