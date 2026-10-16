@@ -4,6 +4,7 @@ Aliasses
 https://www.matdata.be
 https://www.matdata.store
 
-Deployed to Gitlab pages
+Deployed to GitHub Pages via .github/workflows/pages.yml on every push to main.
+The custom domain is set in CNAME (matdata.eu); www.matdata.eu redirects to it automatically.
 
 Gruntfile from https://www.keycdn.com/blog/remove-unused-css
