@@ -32,14 +32,6 @@ projects:
   intro: Open-source tools for railway data and Linked Data. Both run live, so you can try them right now.
   all_link: { label: See all my repositories on GitHub →, url: "https://github.com/orgs/Matdata-eu/repositories" }
 
-products:
-  eyebrow: Products
-  heading: More from the tools
-  intro: >-
-    Both tools are open source and free to use. When you need them on your own infrastructure,
-    tailored to your data or backed by support, MatData builds and runs it for you.
-  cta: { label: Ask about these services →, url: "#contact" }
-
 example:
   eyebrow: Linked Data, in railway terms
   heading: From track to knowledge graph
@@ -100,6 +92,7 @@ footer:
   vat: VAT BE 1015.480.825
   vat_url: https://kbopub.economie.fgov.be/kbopub/zoeknummerform.html?lang=en&nummer=1015.480.825&actionLu=Zoek
   links:
+    - { label: Services around my tools, url: /products.html }
     - { label: Privacy statement, url: /privacy.html }
     - { label: Expertise graph, url: "https://expertise.matdata.eu" }
     - { label: LinkedIn, url: "https://www.linkedin.com/in/mathiasvda/" }

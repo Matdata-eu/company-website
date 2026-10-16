@@ -166,15 +166,13 @@ h1, h2, h3 { font-family: var(--font-sans); }
 .project-body h3 { margin: 0; font-size: 28px; line-height: 34px; font-weight: 600; letter-spacing: -0.01em; }
 .project-body .links { margin-top: auto; padding-top: var(--space-2); }
 
-/* Product services: continues the white Projects section, one group of cards per tool */
-.section--continued { padding-top: 0; }
-.products { display: flex; flex-direction: column; gap: var(--space-12); border-top: 1px solid var(--line); padding-top: 72px; }
+/* Services page (products.html): one group of cards per tool */
+.products { display: flex; flex-direction: column; gap: 56px; }
 .product-group { display: flex; flex-direction: column; gap: var(--space-6); }
 .product-group-head { display: flex; flex-direction: column; gap: var(--space-2); max-width: 720px; }
-.product-group-head h3 { margin: 0; font-size: 28px; line-height: 34px; font-weight: 600; letter-spacing: -0.01em; }
+.product-group-head h2 { margin: 0; font-size: 28px; line-height: 34px; font-weight: 600; letter-spacing: -0.01em; }
 .cards-3 { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(300px, 100%), 1fr)); gap: var(--space-6); }
-.products .md-card { background: var(--surface); }
-.products .md-card h4 { margin: 0; font-size: 20px; line-height: 28px; font-weight: 600; }
+.products .md-card h3 { margin: 0; font-size: 20px; line-height: 28px; font-weight: 600; }
 .products .md-card .tags { margin-top: auto; padding-top: var(--space-1); }
 .products-cta { align-self: flex-start; }
 
@@ -305,7 +303,6 @@ h1, h2, h3 { font-family: var(--font-sans); }
   .hero-ctas .md-btn-primary { width: 100%; justify-content: center; }
   .hero-img { position: static; display: block; height: 280px; width: calc(100% - 32px); margin: 0 auto var(--space-8); border-radius: var(--radius-md); object-position: 80% 30%; }
   .specialism { padding: var(--space-6); }
-  .products { padding-top: var(--space-12); }
   .timeline > li { grid-template-columns: 1fr; }
   .contact h2 { font-size: 40px; line-height: 42px; }
   .contact-card { padding: 20px; }

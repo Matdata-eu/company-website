@@ -12,6 +12,7 @@
   links:
     - { label: Open RINF Atlas →, url: "https://rinf-atlas.matdata.eu" }
     - { label: Source on GitHub, url: "https://github.com/Matdata-eu/rinf-atlas" }
+    - { label: Services & support, url: "/products.html#rinf-atlas" }
 - title: MatGUI
   sparql: true
   text: >-
@@ -22,3 +23,4 @@
   links:
     - { label: Open MatGUI →, url: "https://matgui.matdata.eu/" }
     - { label: Source on GitHub, url: "https://github.com/Matdata-eu/MatGUI" }
+    - { label: Services & support, url: "/products.html#matgui" }
