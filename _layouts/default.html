@@ -61,7 +61,7 @@
   {% assign footer = site.data.home.footer %}
   <footer class="site-footer">
     <div class="wrap">
-      <img src="{{ '/assets/img/matdata-logo-dark.svg' | relative_url }}" alt="MatData" width="408" height="52">
+      <img src="{{ '/assets/img/matdata-logo.svg' | relative_url }}" alt="MatData" width="408" height="52">
       <span>© {{ site.time | date: '%Y' }} MatData · <a href="{{ footer.vat_url }}">{{ footer.vat }}</a></span>
       <nav aria-label="Footer">
         {% for link in footer.links %}<a href="{{ link.url | relative_url }}">{{ link.label }}</a>
