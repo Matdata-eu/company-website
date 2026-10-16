@@ -1,7 +1,6 @@
 # Main menu at the top of every page.
 - { label: Services, url: "/#services" }
 - { label: Projects, url: "/#projects" }
-- { label: Products, url: "/#products" }
 - { label: Talks, url: "/#talks" }
 - { label: About, url: "/#about" }
 - { label: Contact, url: "/#contact" }

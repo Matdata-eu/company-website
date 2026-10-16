@@ -19,7 +19,7 @@ YAML files in _data/; edit them directly on GitHub and the site rebuilds on push
   _data/specialisms.yml        the two "Expertise" cards
   _data/services.yml           service cards
   _data/projects.yml           project cards (screenshots go in assets/img/projects/)
-  _data/product_services.yml   paid services around RINF Atlas and MatGUI ("Products" section)
+  _data/product_services.yml   the "Services around my tools" page (products.html)
   _data/career.yml             the "Track record" timeline
   _data/talks.yml              talks and papers
   _data/clients.yml            customers & partners logos
