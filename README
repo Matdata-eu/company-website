@@ -7,4 +7,24 @@ https://www.matdata.store
 Deployed to GitHub Pages via .github/workflows/pages.yml on every push to main.
 The custom domain is set in CNAME (matdata.eu); www.matdata.eu redirects to it automatically.
 
-Gruntfile from https://www.keycdn.com/blog/remove-unused-css
+Editing the site
+----------------
+The site is built with Jekyll (GitHub Pages' own builder). All texts and lists are plain
+YAML files in _data/; edit them directly on GitHub and the site rebuilds on push to main.
+
+  _data/home.yml               headings and texts of every homepage section, contact details, footer
+  _data/nav.yml                the menu at the top
+  _data/roles.yml              the roles typed in the hero ("I'm Mathias, ...")
+  _data/credentials.yml        the strip under the hero
+  _data/specialisms.yml        the two "Expertise" cards
+  _data/services.yml           service cards
+  _data/projects.yml           project cards (screenshots go in assets/img/projects/)
+  _data/career.yml             the "Track record" timeline
+  _data/talks.yml              talks and papers
+  _data/clients.yml            customers & partners logos
+  _data/social.yml             profile links in "About"
+  _data/network_explorer.yml   texts of the animated network explorer
+
+Layout lives in index.html and _layouts/default.html, styles in assets/css/site.css.
+
+Preview locally:  gem install github-pages && jekyll serve   (then open http://localhost:4000)

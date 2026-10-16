@@ -1,0 +1,30 @@
+# Talks and papers, newest first.
+# date: free text shown on the left (leave empty if unknown)
+# upcoming: true adds the yellow "Upcoming" label
+# slides: optional link to the slides
+- date: 27 Oct 2026
+  upcoming: true
+  title: From XSD to ERA ontology
+  text: RNE Ontology Task Force · how the TAF/TAP TSI schemas became the telematics part of ERA ontology v4.0 · on behalf of Bane NOR
+  slides: https://matdata-eu.github.io/slides-telematics-xsd-to-era-ontology/
+- date: 15 Sep 2026
+  title: Building and publishing a railway infrastructure knowledge graph
+  text: Paper · Sem4Tra 2026 at SEMANTiCS, Ghent · lessons learned from SPARQL Anything, GeoSPARQL, SHACL and RINF publication
+- date: ""
+  title: Dots and lines
+  text: Operational points, primary locations and sections of line on a mesoscopic topology · on behalf of Bane NOR
+  slides: https://matdata-eu.github.io/slides-railway-meso-macro-topology/
+- date: ""
+  title: One network, one truth
+  text: ERA RINF workshop · railway topology as the foundation for RINF · on behalf of Bane NOR
+  slides: https://matdata-eu.github.io/slides-railway-topology/
+- date: 25 Feb 2026
+  title: RINF data provisioning
+  text: Hands-on workshop at the European Union Agency for Railways, for infrastructure managers and national registration entities
+  slides: https://matdata-eu.github.io/slides-era-rinf-data-provisioning/
+- date: Feb 2026
+  title: Building a railway knowledge graph with SPARQL Anything
+  text: Facade-X W3C Community Group
+- date: "2024"
+  title: ERA Railway Data Forum, Verona
+  text: Speaker

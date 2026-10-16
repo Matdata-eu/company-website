@@ -1,0 +1,5 @@
+# Profile links in the "About" section.
+- { label: LinkedIn, url: "https://www.linkedin.com/in/mathiasvda/" }
+- { label: GitHub, url: "https://github.com/MathiasVDA" }
+- { label: GitLab, url: "https://gitlab.com/mathias.vanden.auweele" }
+- { label: Mastodon, url: "https://mastodon.social/@mathiasvda" }

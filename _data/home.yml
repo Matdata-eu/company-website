@@ -1,0 +1,97 @@
+# Text of the homepage, section by section.
+# Lists (services, projects, talks, ...) live in their own files in this folder.
+# Plain text only (just type & where you need an ampersand).
+
+hero:
+  heading: Railway data that connects.
+  greeting: "I'm Mathias,"            # followed by the typed roles from roles.yml
+  intro: >-
+    MatData helps infrastructure managers and railway undertakings turn scattered
+    asset, network and operational data into connected, standards-based knowledge —
+    from data strategy to systems in production.
+  image: /assets/img/hero-bg.jpg
+  image_alt: Mathias Vanden Auweele presenting at the ERA Railway Data Forum 2024 in Verona
+  primary_cta: { label: Get in touch, url: "#contact" }
+  secondary_cta: { label: Explore the expertise graph, url: "https://expertise.matdata.eu" }
+
+expertise:
+  eyebrow: Expertise
+  heading: Two specialisms, one junction
+  intro: >-
+    Most data consultants know data. Most railway engineers know the railway.
+    MatData works where the two meet — so the model fits the infrastructure,
+    and the infrastructure data fits the model.
+
+services:
+  eyebrow: Services
+  heading: From business idea to production
+
+projects:
+  eyebrow: Projects
+  heading: Things I've built
+  intro: Open-source tools for railway data and Linked Data. Both run live, so you can try them right now.
+  all_link: { label: See all my repositories on GitHub →, url: "https://github.com/orgs/Matdata-eu/repositories" }
+
+example:
+  eyebrow: Linked Data, in railway terms
+  heading: From track to knowledge graph
+  paragraphs:
+    - >-
+      One small station, seen as a topology, as a knowledge graph, on a schematic and on a map,
+      then aggregated to meso and macro level. Nothing is re-entered: every view comes from the
+      same net elements and relations.
+    - >-
+      Timetables, infrastructure registers and maintenance systems each keep their own copy of a
+      station. Give the operational point one identifier and a shared meaning, and every system
+      points at the same place.
+
+track_record:
+  eyebrow: Track record
+  heading: Sixteen years on one network
+  intro: "Two master's degrees in engineering, both magna cum laude: Energy at KU Leuven, Electromechanics at GroepT Leuven."
+  cv: { label: Download CV (PDF), url: "https://expertise.matdata.eu/static/Mathias_Vanden_Auweele_CV.pdf" }
+
+talks:
+  eyebrow: Talks & papers
+  heading: Where you can hear me
+  intro: "Most of my slides are interactive and open: click through them in your browser."
+
+clients:
+  heading: Customers & partners
+
+about:
+  eyebrow: About
+  heading: Hi, I'm Mathias
+  image: /assets/img/profile-img-400.jpg
+  image_alt: Portrait of Mathias Vanden Auweele
+  text: >-
+    For sixteen years I worked on Infrabel's infrastructure data — from catenary measurements
+    and European working groups to leading the data-centricity team. With MatData I bring that
+    experience to railway organisations that want their data to connect, inside the company
+    and across borders.
+  location: Based between Brussels and Leuven, working across Europe.
+
+contact:
+  eyebrow: Contact
+  heading: Let's connect your data.
+  intro: Tell me what you're working on. A first conversation is always free.
+  # The address is put together in the browser, so it never appears as plain text in the HTML.
+  email_user: info
+  email_domain: matdata.eu
+  email_subject: Railway data project
+  email_label: Send me an email
+  email_note: I usually reply within a few hours.
+  linkedin_label: Message me on LinkedIn
+  linkedin_note: Or just connect and follow what I'm working on.
+  linkedin_url: https://www.linkedin.com/in/mathiasvda/
+  details:
+    - { label: Office, value: "Kampenhout, Belgium" }
+    - { label: Status, value: Available for new projects, dot: true }
+
+footer:
+  vat: VAT BE 1015.480.825
+  vat_url: https://kbopub.economie.fgov.be/kbopub/zoeknummerform.html?lang=en&nummer=1015.480.825&actionLu=Zoek
+  links:
+    - { label: Privacy statement, url: /privacy.html }
+    - { label: Expertise graph, url: "https://expertise.matdata.eu" }
+    - { label: LinkedIn, url: "https://www.linkedin.com/in/mathiasvda/" }

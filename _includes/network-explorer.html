@@ -1,0 +1,62 @@
+{% assign nx = site.data.network_explorer %}{% assign first = nx.steps[nx.start] %}
+<div class="nx" data-network-explorer data-start="{{ nx.start }}" data-interval="{{ nx.interval }}" data-play-label="{{ nx.play_label | escape }}" data-pause-label="{{ nx.pause_label | escape }}">
+  <script type="application/json" data-steps>{{ nx.steps | jsonify }}</script>
+  <div class="nx-top">
+    <span class="nx-title">{{ nx.title | escape }}</span>
+    <button type="button" class="nx-play" aria-pressed="false" hidden>{{ nx.play_label | escape }}</button>
+  </div>
+
+  <svg class="nx-svg" viewBox="0 20 1000 300" role="img" aria-label="Railway network explorer: {{ first.title | escape }}">
+    <rect x="8" y="26" width="984" height="288" rx="4" fill="#f5f3ee" stroke="#d9d4c7" stroke-width="1.5"></rect>
+    <text x="26" y="52" font-size="14" fill="#4a5563">rtm:Network</text>
+    <rect x="724" y="34" width="256" height="26" rx="13" fill="#ffffff" stroke="#0563bb" stroke-width="1.5"></rect>
+    <text x="852" y="52" font-size="12" text-anchor="middle" fill="#0563bb" data-nx="badge">{{ first.badge | escape }}</text>
+    <g data-nx="dynamic"></g>
+    <!-- meso + macro: line ends -->
+    <g class="fade" data-nx="agg" opacity="0">
+      <circle cx="40" cy="215" r="10" fill="#ffffff" stroke="#0563bb" stroke-width="3"></circle>
+      <circle cx="960" cy="215" r="10" fill="#ffffff" stroke="#0563bb" stroke-width="3"></circle>
+      <text x="40" y="250" font-size="13" text-anchor="middle" fill="#0f1b2d">A</text>
+      <text x="960" y="250" font-size="13" text-anchor="middle" fill="#0f1b2d">B</text>
+    </g>
+    <!-- meso: operational point + sections of line -->
+    <g class="fade" data-nx="meso" opacity="0">
+      <circle cx="500" cy="215" r="22" fill="#ffffff" stroke="#0563bb" stroke-width="4"></circle>
+      <circle cx="500" cy="215" r="8" fill="#0563bb"></circle>
+      <text x="270" y="199" font-size="13" text-anchor="middle" fill="#0563bb">era:SectionOfLine</text>
+      <text x="730" y="199" font-size="13" text-anchor="middle" fill="#0563bb">era:SectionOfLine</text>
+      <text x="500" y="262" font-size="13" text-anchor="middle" fill="#0f1b2d">era:OperationalPoint · station</text>
+      <text x="500" y="282" font-size="11" text-anchor="middle" fill="#4a5563">e2–e5 aggregated · e1, e6 become sections of line</text>
+    </g>
+    <!-- macro: the national line -->
+    <g class="fade" data-nx="macro" opacity="0">
+      <path d="M 40 215 L 960 215" stroke="#0f1b2d" stroke-width="10" stroke-linecap="round"></path>
+      <circle cx="40" cy="215" r="10" fill="#ffffff" stroke="#0563bb" stroke-width="3"></circle>
+      <circle cx="960" cy="215" r="10" fill="#ffffff" stroke="#0563bb" stroke-width="3"></circle>
+      <circle cx="500" cy="215" r="16" fill="none" stroke="#8a8476" stroke-width="2" stroke-dasharray="4 3"></circle>
+      <text x="500" y="185" font-size="14" text-anchor="middle" fill="#0f1b2d">National railway line</text>
+      <text x="500" y="252" font-size="12" text-anchor="middle" fill="#4a5563">a station that is just on the line is no longer a node</text>
+      <text x="500" y="272" font-size="12" text-anchor="middle" fill="#4a5563">start and end stations, junctions and interchange stations stay</text>
+    </g>
+  </svg>
+
+  <div class="nx-stops">
+    <div class="nx-rail" aria-hidden="true"></div>
+    <div class="nx-stops-grid" role="group" aria-label="Choose a view">
+      {% for st in nx.steps %}<button type="button" class="nx-stop{% if forloop.index0 < nx.start %} is-past{% endif %}" data-step="{{ forloop.index0 }}"{% if forloop.index0 == nx.start %} aria-current="step"{% endif %}>
+        <span class="nx-dot" aria-hidden="true"></span>
+        <span class="nx-stop-label">{{ st.label | escape }}</span>
+      </button>
+      {% endfor %}
+    </div>
+  </div>
+
+  <div class="nx-caption" aria-live="polite">
+    <div class="nx-caption-head">
+      <span class="nx-step-no" data-nx="no">{{ nx.start | plus: 1 }}/{{ nx.steps | size }}</span>
+      <b class="nx-step-title" data-nx="title">{{ first.title | escape }}</b>
+    </div>
+    <span class="nx-step-sub" data-nx="sub">{{ first.sub | escape }}</span>
+  </div>
+  <a class="nx-source" href="{{ nx.source.url }}">{{ nx.source.label | escape }}</a>
+</div>

@@ -1,0 +1,19 @@
+# Site settings. The page texts and lists are in _data/ (see README).
+title: MatData
+tagline: railway data that connects
+description: >-
+  MatData helps infrastructure managers and railway undertakings turn scattered asset, network
+  and operational data into connected, standards-based knowledge: data strategy, ontologies and
+  Linked Data, data engineering and courses.
+keywords: matdata, mathias vanden auweele, railway, data, linked data, rdf, sparql, shacl, railml, era, ontology, rinf, architecture, data engineering, gis, devops
+url: https://matdata.eu
+baseurl: ""
+
+exclude:
+  - README
+  - README.md
+  - .gitlab-ci.yml
+  - _redirects
+  - Gemfile
+  - Gemfile.lock
+  - vendor
