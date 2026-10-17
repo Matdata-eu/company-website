@@ -6,7 +6,7 @@
 
   var SVG_NS = 'http://www.w3.org/2000/svg';
   var N = 32;
-  var BRAND = '#0563bb', INK = '#0f1b2d', EDGE = '#8a8476', HALO = '#e3eefa', MUTED = '#4a5563';
+  var BRAND = '#0563bb', INK = '#1c2633', EDGE = '#808893', HALO = '#e3eefa', MUTED = '#4a5563';
 
   var VIEWS = {
     elements: { mode: 'abstract', chev: true },
