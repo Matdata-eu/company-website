@@ -11,7 +11,7 @@ files under [`_data/`](_data/), so most changes never touch HTML.
 ## Editing the content
 
 Edit a file in `_data/` (directly on GitHub is fine) and push to `main`. The site rebuilds and
-goes live on its own within a minute or two. Each YAML file starts with a comment explaining its
+goes live on its own. Each YAML file starts with a comment explaining its
 fields.
 
 | File | What it controls |
