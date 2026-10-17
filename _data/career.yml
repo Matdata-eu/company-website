@@ -1,6 +1,6 @@
 # The "Track record" timeline, newest first.
 # id / km: the two halves of the plate on the left. current: true makes it amber.
-- { id: NOW, km: "2025–", current: true, title: "Founder, MatData", text: "Independent railway data and Linked Data consultancy." }
+- { id: NOW, km: "2025–", current: true, title: "Founder, MatData", text: "Independent railway data and Linked Data consultancy. Building the Digital Infrastructure Model (DIM) for Bane NOR, independent expert in RINF and telematics for the European Union Agency for Railways (ERA), and energy expert for Certifer." }
 - { id: "2022", km: "–2025", title: "Team lead data centricity · Infrabel", text: "Data migration, application landscape, data quality and portfolio management." }
 - { id: "2020", km: "–2022", title: "Project lead digitalisation · Infrabel" }
 - { id: "2017", km: "–2020", title: "Project lead strategic project reporting · Infrabel", text: "Set up the PMO and its reporting." }

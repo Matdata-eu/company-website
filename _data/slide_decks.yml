@@ -1,0 +1,30 @@
+# Slide decks shown as cards under "Talks & papers", to show complex subjects explained clearly.
+# Each deck: title, text, the live slides and (optional) the source on GitHub.
+heading: Slide decks
+intro: >-
+  Complex subjects, explained clearly. These interactive decks walk through hard railway data
+  questions step by step; click through them in your browser.
+decks:
+  - title: From XSD to ERA ontology
+    text: >-
+      How the TAF/TAP TSI schemas became the telematics part of ERA ontology v4.0. For the RNE
+      Ontology Task Force (27 Oct 2026), on behalf of Bane NOR.
+    slides: https://matdata-eu.github.io/slides-telematics-xsd-to-era-ontology/
+    source: https://github.com/Matdata-eu/slides-telematics-xsd-to-era-ontology
+  - title: One network, one truth
+    text: >-
+      Railway topology as the foundation for RINF. ERA RINF workshop, on behalf of Bane NOR.
+    slides: https://matdata-eu.github.io/slides-railway-topology/
+    source: https://github.com/Matdata-eu/slides-railway-topology
+  - title: Dots and lines
+    text: >-
+      Operational points, primary locations and sections of line on a mesoscopic topology. On
+      behalf of Bane NOR.
+    slides: https://matdata-eu.github.io/slides-railway-meso-macro-topology/
+    source: https://github.com/Matdata-eu/slides-railway-meso-macro-topology
+  - title: Topology-assisted positioning
+    text: >-
+      Linear positioning systems, anchors, and absolute, relative, intrinsic and geometric
+      positions on one topology, in RailTopoModel and railML 3 terms. On behalf of Bane NOR.
+    slides: https://matdata-eu.github.io/slides-topology-assisted-positioning/
+    source: https://github.com/Matdata-eu/slides-topology-assisted-positioning

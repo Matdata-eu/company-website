@@ -86,3 +86,31 @@ tools:
           New views, plugins and workflows built to your specification and contributed back to
           the open-source project, plus SPARQL training and support for your team.
         tags: [Development, Support, Training]
+
+# The other open-source tools, shown as small cards under the two tools above.
+other_tools:
+  heading: The same for my other tools
+  intro: >-
+    MatData offers similar services for the other open-source tools on GitHub: private
+    instances, tailoring to your data, features on request, support and training.
+  tools:
+    - title: shacl-report
+      text: >-
+        Validates RDF with SHACL and turns the report into a table people can read, with the
+        shapes behind it and their rules runnable as SPARQL.
+      url: https://github.com/Matdata-eu/shacl-report
+    - title: rdf-compare
+      text: >-
+        A fast CLI that computes the difference between two RDF files, blank nodes included,
+        with a CI mode for data pipelines.
+      url: https://github.com/Matdata-eu/rdf-compare
+    - title: Ontology Explorer
+      text: >-
+        Browse an ontology's classes, properties and their relations, so modellers and
+        developers find their way around it quickly.
+      url: https://github.com/Matdata-eu/ontology-explorer
+    - title: RDF Data Manager
+      text: >-
+        Create, read, update and delete RDF data behind a SPARQL endpoint, with forms driven
+        entirely by SHACL shapes.
+      url: https://github.com/Matdata-eu/rdf-data-manager
