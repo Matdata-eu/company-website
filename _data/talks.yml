@@ -16,6 +16,7 @@
 - date: 15 Sep 2026
   title: Building and publishing a railway infrastructure knowledge graph
   text: Paper · Sem4Tra 2026 at SEMANTiCS, Ghent · lessons learned from SPARQL Anything, GeoSPARQL, SHACL and RINF publication
+  link: { label: Slides →, url: "https://sem4tra2026.matdata.eu/" }
 - date: 25 Feb 2026
   title: RINF data provisioning
   text: Hands-on workshop at the European Union Agency for Railways, for infrastructure managers and national registration entities
@@ -23,19 +24,22 @@
 - date: Feb 2026
   title: Building a railway knowledge graph with SPARQL Anything
   text: Facade-X W3C Community Group
+  link: { label: Slides →, url: "https://github.com/Matdata-eu/Slides-W3C-Facade-X/" }
 - date: 2 Oct 2025
   title: How to get started with linked railway data
   text: ICT for Railways, 8th edition, Madrid
-- date: "2025"
+- date: 17 Dec 2025
   title: TP-Lib at OpenRail Day 2025
   text: OpenRail Day, Paris · an open-source library for railway GNSS post-processing and train path calculation
-- date: "2025"
+- date: 19 Jun 2025
   title: TSI telematics course
   text: Classroom course on the TAF and TAP TSIs and their data exchange · the course material is open
   link: { label: Course material →, url: "/assets/shared/TSI-Telematics-course.pptx" }
 - date: 11–13 Jun 2025
   title: Railway data modelling
   text: Workshop at the ERA Rail Data Forum 2025, Cluj-Napoca · data modelling and ontology engineering with the ERA ontology, run twice
-- date: "2024"
+  link: { label: ERA Rail Data Forum 2025 agenda →, url: "https://www.era.europa.eu/agenda/agenda-rail-data-forum-2025" }
+- date: 18-19 Jun 2024
   title: ERA Railway Data Forum, Verona
-  text: Speaker
+  text: Semantics driving FAIR data in Railways
+  link: { label: ERA Railway Data Forum 2024 agenda →, url: "https://www.era.europa.eu/agenda/agenda-rail-data-forum-2024" }
