@@ -47,7 +47,7 @@ example:
 
 track_record:
   eyebrow: Track record
-  heading: Sixteen years on one network
+  heading: Railway data across European networks
   intro: "Two master's degrees in engineering, both magna cum laude: Energy at KU Leuven, Electromechanics at GroepT Leuven."
   cv: { label: Download CV (PDF), url: "https://expertise.matdata.eu/static/Mathias_Vanden_Auweele_CV.pdf" }
 
@@ -65,10 +65,12 @@ about:
   image: /assets/img/profile-img-400.jpg
   image_alt: Portrait of Mathias Vanden Auweele
   text: >-
-    For sixteen years I worked on Infrabel's infrastructure data — from catenary measurements
-    and European working groups to leading the data-centricity team. With MatData I bring that
-    experience to railway organisations that want their data to connect, inside the company
-    and across borders.
+    Today I build the Digital Infrastructure Model for Bane NOR, Norway's knowledge graph of its
+    railway infrastructure, advise the European Union Agency for Railways as an independent
+    expert in RINF and telematics, and work as an energy expert for Certifer. Before MatData I
+    spent sixteen years on Infrabel's infrastructure data, from catenary measurements and
+    European working groups to leading the data-centricity team. I bring that experience to
+    railway organisations that want their data to connect, inside the company and across borders.
   location: Based between Brussels and Leuven, working across Europe.
 
 contact:

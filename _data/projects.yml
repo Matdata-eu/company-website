@@ -2,8 +2,8 @@
 # image: a screenshot (put it in assets/img/projects/). Leave it out and set
 # sparql: true to show the SPARQL query panel instead.
 - title: RINF Atlas
-  image: /assets/img/projects/rinf-atlas.png
-  image_alt: "RINF Atlas: a map of Belgian and Dutch infrastructure elements with class, country and infrastructure-manager filters, and the details of one operational point"
+  image: /assets/img/projects/rinf-atlas.webp
+  image_alt: "RINF Atlas: Norwegian infrastructure around Oslo on a map with class filters, the details of one signal, and a line profile from Oslo S to Lillestrøm showing speed, electrification and gauge per section"
   text: >-
     A fast map and faceted search over ERA's Register of Infrastructure: operational points,
     sections of line, tracks, tunnels, platforms and more, with production and test data side by
@@ -14,7 +14,8 @@
     - { label: Source on GitHub, url: "https://github.com/Matdata-eu/rinf-atlas" }
     - { label: Services & support, url: "/products.html#rinf-atlas" }
 - title: MatGUI
-  sparql: true
+  image: /assets/img/projects/matgui.webp
+  image_alt: "MatGUI: a SPARQL query on ERA's RINF endpoint, its results as operational points on a map of Brussels, and the triples of one selected point"
   text: >-
     A modern knowledge graph and SPARQL workbench: a full query editor with table, graph and map
     views of the results. It started as a fork of Yasgui and has grown well beyond it; available

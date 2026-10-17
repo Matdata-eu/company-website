@@ -2,22 +2,20 @@
 # date: free text shown on the left (leave empty if unknown)
 # upcoming: true adds the yellow "Upcoming" label
 # slides: optional link to the slides
-- date: 27 Oct 2026
+# Slide decks shown as cards below the timeline live in slide_decks.yml.
+- date: 11–12 Nov 2026
   upcoming: true
-  title: From XSD to ERA ontology
-  text: RNE Ontology Task Force · how the TAF/TAP TSI schemas became the telematics part of ERA ontology v4.0 · on behalf of Bane NOR
-  slides: https://matdata-eu.github.io/slides-telematics-xsd-to-era-ontology/
+  title: Connected Data London 2026
+  text: Speaker · the knowledge graph and graph AI conference, London
+  link: { label: Speaker page →, url: "https://2026.connected-data.london/speakers/mathias-vanden-auweele/" }
+- date: 25 Oct 2026
+  upcoming: true
+  title: "Façade-X tutorial: querying any format"
+  text: Tutorial at ISWC 2026, Bari · turning CSV, JSON, XML and more into knowledge graphs with SPARQL Anything
+  link: { label: Tutorial page →, url: "https://w3c-facade-x.github.io/iswc2026-tutorial/" }
 - date: 15 Sep 2026
   title: Building and publishing a railway infrastructure knowledge graph
   text: Paper · Sem4Tra 2026 at SEMANTiCS, Ghent · lessons learned from SPARQL Anything, GeoSPARQL, SHACL and RINF publication
-- date: ""
-  title: Dots and lines
-  text: Operational points, primary locations and sections of line on a mesoscopic topology · on behalf of Bane NOR
-  slides: https://matdata-eu.github.io/slides-railway-meso-macro-topology/
-- date: ""
-  title: One network, one truth
-  text: ERA RINF workshop · railway topology as the foundation for RINF · on behalf of Bane NOR
-  slides: https://matdata-eu.github.io/slides-railway-topology/
 - date: 25 Feb 2026
   title: RINF data provisioning
   text: Hands-on workshop at the European Union Agency for Railways, for infrastructure managers and national registration entities
@@ -25,6 +23,19 @@
 - date: Feb 2026
   title: Building a railway knowledge graph with SPARQL Anything
   text: Facade-X W3C Community Group
+- date: 2 Oct 2025
+  title: How to get started with linked railway data
+  text: ICT for Railways, 8th edition, Madrid
+- date: "2025"
+  title: TP-Lib at OpenRail Day 2025
+  text: OpenRail Day, Paris · an open-source library for railway GNSS post-processing and train path calculation
+- date: "2025"
+  title: TSI telematics course
+  text: Classroom course on the TAF and TAP TSIs and their data exchange · the course material is open
+  link: { label: Course material →, url: "/assets/shared/TSI-Telematics-course.pptx" }
+- date: 11–13 Jun 2025
+  title: Railway data modelling
+  text: Workshop at the ERA Rail Data Forum 2025, Cluj-Napoca · data modelling and ontology engineering with the ERA ontology, run twice
 - date: "2024"
   title: ERA Railway Data Forum, Verona
   text: Speaker

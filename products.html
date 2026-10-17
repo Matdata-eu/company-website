@@ -29,6 +29,23 @@ description: Paid services around RINF Atlas and MatGUI, MatData's open-source r
         </div>
       </div>
       {% endfor %}
+      {% if t.other_tools %}
+      <div class="product-group" id="other-tools">
+        <div class="product-group-head">
+          <h2>{{ t.other_tools.heading | escape }}</h2>
+          <p class="muted">{{ t.other_tools.intro | escape }}</p>
+        </div>
+        <div class="cards-3">
+          {% for o in t.other_tools.tools %}
+          <article class="md-card">
+            <h3>{{ o.title | escape }}</h3>
+            <p>{{ o.text | escape }}</p>
+            <div class="links"><a class="link-strong" href="{{ o.url }}">Source on GitHub</a></div>
+          </article>
+          {% endfor %}
+        </div>
+      </div>
+      {% endif %}
       <a class="md-btn md-btn-primary products-cta" href="{{ t.cta.url | relative_url }}">{{ t.cta.label | escape }}</a>
     </div>
   </section>

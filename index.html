@@ -211,10 +211,27 @@ scripts:
             <h3>{{ talk.title | escape }}</h3>
             {% if talk.text %}<p>{{ talk.text | escape }}</p>{% endif %}
             {% if talk.slides %}<a class="talk-slides" href="{{ talk.slides }}">Slides →</a>{% endif %}
+            {% if talk.link %}<a class="talk-slides" href="{{ talk.link.url }}">{{ talk.link.label | escape }}</a>{% endif %}
           </div>
         </li>
         {% endfor %}
       </ol>
+    </div>
+    {% assign d = site.data.slide_decks %}
+    <div class="wrap decks">
+      <div class="decks-head">
+        <h3>{{ d.heading | escape }}</h3>
+        <p class="muted">{{ d.intro | escape }}</p>
+      </div>
+      <div class="cards-3">
+        {% for deck in d.decks %}
+        <article class="md-card">
+          <h3>{{ deck.title | escape }}</h3>
+          <p>{{ deck.text | escape }}</p>
+          <div class="links"><a class="link-strong" href="{{ deck.slides }}">Open the slides →</a>{% if deck.source %}<a class="link-strong" href="{{ deck.source }}">Source on GitHub</a>{% endif %}</div>
+        </article>
+        {% endfor %}
+      </div>
     </div>
   </section>
 
