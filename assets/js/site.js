@@ -16,6 +16,13 @@
     header.querySelectorAll('.md-nav a').forEach(function (a) { a.addEventListener('click', function () { setOpen(false); }); });
   }
 
+  // The header gets its hairline only once the page scrolls under it.
+  if (header) {
+    var onScroll = function () { header.classList.toggle('is-scrolled', window.scrollY > 4); };
+    onScroll();
+    window.addEventListener('scroll', onScroll, { passive: true });
+  }
+
   // E-mail links: the address is assembled here so it is not in the HTML as plain text.
   document.querySelectorAll('[data-email-user]').forEach(function (node) {
     var address = node.getAttribute('data-email-user') + '@' + node.getAttribute('data-email-domain');
