@@ -84,7 +84,7 @@ scripts:
         <ul class="tags">{% for tag in c.tags %}<li class="md-tag">{{ tag | escape }}</li>{% endfor %}</ul>
       </div>{% else %}
       <div class="proof-item">
-        <span class="md-line{% if c.marker.amber %} md-line-amber{% endif %}"><span class="md-line-id">{{ c.marker.id | escape }}</span><span class="md-line-km">{{ c.marker.km | escape }}</span></span>
+        <span class="md-line{% if c.marker.amber %} md-line-amber{% endif %}"><span class="md-line-id">{{ c.marker.id | escape }}</span>{% if c.marker.km %}<span class="md-line-km">{{ c.marker.km | escape }}</span>{% endif %}</span>
         <span>{{ c.text | escape }}</span>
       </div>{% endif %}{% endfor %}
     </div>
