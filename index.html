@@ -85,7 +85,7 @@ scripts:
       </div>{% else %}
       <div class="proof-item">
         <span class="md-line{% if c.marker.amber %} md-line-amber{% endif %}"><span class="md-line-id">{{ c.marker.id | escape }}</span>{% if c.marker.km %}<span class="md-line-km">{{ c.marker.km | escape }}</span>{% endif %}</span>
-        <span>{{ c.text | escape }}</span>
+        <span>{{ c.text | escape }}{% if c.link %} <a class="link-strong" href="{{ c.link.url }}">{{ c.link.label | escape }}</a>{% endif %}</span>
       </div>{% endif %}{% endfor %}
     </div>
   </section>
