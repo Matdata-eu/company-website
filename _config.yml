@@ -9,6 +9,10 @@ keywords: matdata, mathias vanden auweele, railway, data, linked data, rdf, spar
 url: https://matdata.eu
 baseurl: ""
 
+# Writes /sitemap.xml (listed in robots.txt) for Search Console and Bing.
+plugins:
+  - jekyll-sitemap
+
 exclude:
   - README
   - README.md
