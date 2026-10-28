@@ -43,10 +43,11 @@
     <div class="wrap">
       <a class="brand-link" href="{{ '/' | relative_url }}"><img src="{{ '/assets/img/matdata-logo.svg' | relative_url }}" alt="MatData" width="274" height="52"></a>
       <nav class="md-nav" id="main-nav" aria-label="Main">
-        {% for item in site.data.nav %}<a href="{{ item.url | relative_url }}">{{ item.label }}</a>
+        {% for item in site.data.nav %}<a href="{{ item.url | relative_url }}"{% if item.button %} class="nav-phone-only"{% endif %}>{{ item.label | escape }}</a>
         {% endfor %}
       </nav>
       <div class="header-actions">
+        {% for item in site.data.nav %}{% if item.button %}<a class="md-btn" href="{{ item.url | relative_url }}">{{ item.label | escape }}</a>{% endif %}{% endfor %}
         <a class="md-btn md-btn-primary" href="{{ '/#contact' | relative_url }}">{{ site.data.home.hero.primary_cta.label }}</a>
         <button type="button" class="menu-toggle" aria-label="Open menu" aria-controls="main-nav" aria-expanded="false">
           <svg width="20" height="20" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M2 5h16M2 10h16M2 15h16"></path></svg>

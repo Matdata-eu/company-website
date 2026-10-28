@@ -13,6 +13,7 @@
   title: "Façade-X tutorial: querying any format"
   text: Tutorial at ISWC 2026, Bari · turning CSV, JSON, XML and more into knowledge graphs with SPARQL Anything
   link: { label: Tutorial page →, url: "https://w3c-facade-x.github.io/iswc2026-tutorial/" }
+  slides: https://iswc2026.matdata.eu/
 - date: 15 Sep 2026
   title: Building and publishing a railway infrastructure knowledge graph
   text: Paper · Sem4Tra 2026 at SEMANTiCS, Ghent · lessons learned from SPARQL Anything, GeoSPARQL, SHACL and RINF publication
