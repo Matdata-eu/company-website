@@ -120,6 +120,7 @@ h1, h2, h3 { font-family: var(--font-sans); }
 .md-nav a[aria-current] { color: var(--ink); border-bottom-color: var(--brand); }
 .md-nav a:hover { color: var(--ink); }
 .header-actions { display: flex; align-items: center; gap: var(--space-4); }
+.md-nav .nav-phone-only { display: none; }
 .menu-toggle { display: none; width: 44px; height: 44px; align-items: center; justify-content: center; background: none; border: 1px solid var(--line-strong); border-radius: 8px; color: var(--ink); cursor: pointer; }
 
 /* Hero */
@@ -306,6 +307,7 @@ h1, h2, h3 { font-family: var(--font-sans); }
   .md-nav a { padding: var(--space-3) 0; border-bottom: 1px solid var(--line); }
   .md-nav a[aria-current] { border-bottom-color: var(--line); box-shadow: inset 3px 0 0 var(--brand); padding-left: var(--space-3); }
   .site-header.is-open .md-nav { display: flex; }
+  .md-nav .nav-phone-only { display: block; }
 }
 @media (max-width: 760px) {
   .wrap { padding-left: var(--space-4); padding-right: var(--space-4); }

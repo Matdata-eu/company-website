@@ -40,7 +40,7 @@ description: Paid services around RINF Atlas and MatGUI, MatData's open-source r
           <article class="md-card">
             <h3>{{ o.title | escape }}</h3>
             <p>{{ o.text | escape }}</p>
-            <div class="links"><a class="link-strong" href="{{ o.url }}">Source on GitHub</a></div>
+            <div class="links">{% if o.site %}<a class="link-strong" href="{{ o.site }}">Try it online →</a>{% endif %}<a class="link-strong" href="{{ o.url }}">Source on GitHub</a></div>
           </article>
           {% endfor %}
         </div>
