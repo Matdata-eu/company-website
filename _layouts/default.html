@@ -63,7 +63,7 @@
   <footer class="site-footer">
     <div class="wrap">
       <img src="{{ '/assets/img/matdata-logo.svg' | relative_url }}" alt="MatData" width="274" height="52">
-      <span>© {{ site.time | date: '%Y' }} {{ footer.company }} · {{ footer.address }} · <a href="{{ footer.vat_url }}">{{ footer.vat }}</a></span>
+      <span>© {{ site.time | date: '%Y' }} {{ footer.company }} · {{ footer.address }} · {{ footer.register }} · <a href="{{ footer.vat_url }}">{{ footer.vat }}</a></span>
       <nav aria-label="Footer">
         {% for link in footer.links %}<a href="{{ link.url | relative_url }}">{{ link.label }}</a>
         {% endfor %}
