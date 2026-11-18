@@ -52,7 +52,20 @@ scripts:
         "schema:familyName": "Vanden Auweele",
         "schema:email": "mathias@matdata.eu",
         "schema:affiliation": "MatData",
-        "schema:worksFor": { "@id": "https://matdata.eu", "@type": "schema:Organization" },
+        "schema:worksFor": {
+          "@id": "https://matdata.eu/#company",
+          "@type": "schema:Organization",
+          "schema:name": "MatData",
+          "schema:legalName": "{{ t.footer.company }}",
+          "schema:vatID": "BE1015480825",
+          "schema:address": {
+            "@type": "schema:PostalAddress",
+            "schema:streetAddress": "Bogaertstraat 11",
+            "schema:postalCode": "1910",
+            "schema:addressLocality": "Kampenhout",
+            "schema:addressCountry": "BE"
+          }
+        },
         "schema:image": { "@value": "https://matdata.eu/assets/img/profile-img.jpg", "@type": "schema:URL" },
         "schema:url": { "@id": "https://matdata.eu/", "@type": "schema:URL" }
       }

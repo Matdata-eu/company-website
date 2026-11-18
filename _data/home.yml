@@ -87,10 +87,13 @@ contact:
   linkedin_note: Or just connect and follow what I'm working on.
   linkedin_url: https://www.linkedin.com/in/mathiasvda/
   details:
-    - { label: Office, value: "Kampenhout, Belgium" }
+    - { label: Office, value: "Bogaertstraat 11, 1910 Kampenhout, Belgium" }
     - { label: Status, value: Available for new projects, dot: true }
 
 footer:
+  # Legal details Belgian law asks a business website to show (Code of Economic Law, art. III.74).
+  company: MatData BV
+  address: Bogaertstraat 11, 1910 Kampenhout, Belgium
   vat: VAT BE 1015.480.825
   vat_url: https://kbopub.economie.fgov.be/kbopub/zoeknummerform.html?lang=en&nummer=1015.480.825&actionLu=Zoek
   links:
