@@ -3,13 +3,13 @@
 # upcoming: true adds the yellow "Upcoming" label
 # slides: optional link to the slides
 # Slide decks shown as cards below the timeline live in slide_decks.yml.
-- date: 11–12 Nov 2026
-  upcoming: true
-  title: Connected Data London 2026
-  text: Speaker · the knowledge graph and graph AI conference, London
+- date: 12 Nov 2026
+  title: Building the Norwegian Railway Knowledge Graph
+  text: Talk at Connected Data London 2026 · Bane NOR's production railway knowledge graph, and where the Semantic Web stack runs off the track
+  slides: https://cdl2026.matdata.eu
+  link: { label: Speaker page →, url: "https://2026.connected-data.london/speakers/mathias-vanden-auweele/" }
   link: { label: Speaker page →, url: "https://2026.connected-data.london/speakers/mathias-vanden-auweele/" }
 - date: 25 Oct 2026
-  upcoming: true
   title: "Façade-X tutorial: querying any format"
   text: Tutorial at ISWC 2026, Bari · turning CSV, JSON, XML and more into knowledge graphs with SPARQL Anything
   link: { label: Tutorial page →, url: "https://w3c-facade-x.github.io/iswc2026-tutorial/" }

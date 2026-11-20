@@ -5,6 +5,12 @@ intro: >-
   Complex subjects, explained clearly. These interactive decks walk through hard railway data
   questions step by step; click through them in your browser.
 decks:
+  - title: Building the Norwegian Railway Knowledge Graph
+    text: >-
+      Bane NOR's production railway knowledge graph: topology first, lift and uplift with SHACL
+      rules, and where the Semantic Web stack runs off the track. Connected Data London 2026.
+    slides: https://cdl2026.matdata.eu
+    source: https://github.com/Matdata-eu/slides-cdl2026
   - title: From XSD to ERA ontology
     text: >-
       How the TAF/TAP TSI schemas became the telematics part of ERA ontology v4.0. For the RNE
