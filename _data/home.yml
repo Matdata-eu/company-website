@@ -29,7 +29,7 @@ services:
 projects:
   eyebrow: Projects
   heading: Things I've built
-  intro: Open-source tools for railway data and Linked Data. Both run live, so you can try them right now.
+  intro: Open-source tools for railway data and Linked Data. All of them run live, so you can try them right now.
   all_link: { label: See all my repositories on GitHub →, url: "https://github.com/orgs/Matdata-eu/repositories" }
 
 example:

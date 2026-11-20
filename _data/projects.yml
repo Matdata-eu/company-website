@@ -1,6 +1,18 @@
 # Project cards in the "Projects" section.
 # image: a screenshot (put it in assets/img/projects/). Leave it out and set
 # sparql: true to show the SPARQL query panel instead.
+- title: TripleTrail
+  image: /assets/img/projects/tripletrail.webp
+  image_alt: "TripleTrail's map view: high-speed railway sections across Europe coloured by maximum speed, with facets for electrification and speed next to the map"
+  text: >-
+    An RDF triple store with a special love for spatial: SPARQL 1.2 with GeoSPARQL, PostGIS-style
+    spatial functions and pgRouting-style routing built in, plus SHACL, OWL 2 RL, OGC API Features
+    and vector tiles. A drop-in replacement for Apache Jena Fuseki, written in Rust on Oxigraph.
+  tags: [Triple store, GeoSPARQL, Routing, Rust, Open source]
+  links:
+    - { label: Visit tripletrail.eu →, url: "https://tripletrail.eu" }
+    - { label: Live demo, url: "https://demo.tripletrail.eu" }
+    - { label: Source on GitHub, url: "https://github.com/Matdata-eu/tripletrail" }
 - title: RINF Atlas
   image: /assets/img/projects/rinf-atlas.webp
   image_alt: "RINF Atlas: Norwegian infrastructure around Oslo on a map with class filters, the details of one signal, and a line profile from Oslo S to Lillestrøm showing speed, electrification and gauge per section"
