@@ -53,6 +53,7 @@ tools:
       SPARQL every day, MatData can shape it around your organisation:
     links:
       - { label: Open MatGUI →, url: "https://matgui.matdata.eu/" }
+      - { label: Documentation →, url: "https://matgui-doc.matdata.eu/" }
     offers:
       - title: Your own private instance
         text: >-
@@ -88,6 +89,7 @@ tools:
         tags: [Development, Support, Training]
 
 # The other open-source tools, shown as small cards under the two tools above.
+# url: the source on GitHub; site (optional): where people can use it online.
 other_tools:
   heading: The same for my other tools
   intro: >-
@@ -99,6 +101,19 @@ other_tools:
         Validates RDF with SHACL and turns the report into a table people can read, with the
         shapes behind it and their rules runnable as SPARQL.
       url: https://github.com/Matdata-eu/shacl-report
+      site: https://shacl-report.matdata.eu/
+    - title: RouteBook
+      text: >-
+        A railway routebook on ERA's RINF data: pick two stations and see the signals, speeds,
+        gradients, tunnels and switches along the route, on a map, a schematic or a drive view.
+      url: https://github.com/Matdata-eu/rinf-routebook
+      site: https://routebook.matdata.eu/
+    - title: RDF rules playground
+      text: >-
+        Try SHACL rules (sh:TripleRule, sh:SPARQLRule) in the browser or from the command line,
+        and see which rule inferred each triple.
+      url: https://github.com/Matdata-eu/rdf-rules-playground
+      site: https://rdf-rules-playground.matdata.eu/
     - title: rdf-compare
       text: >-
         A fast CLI that computes the difference between two RDF files, blank nodes included,

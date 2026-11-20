@@ -4,3 +4,5 @@
 - { label: Talks, url: "/#talks" }
 - { label: About, url: "/#about" }
 - { label: Contact, url: "/#contact" }
+# button: true shows the item as a button next to "Get in touch" (in the menu on phones).
+- { label: Products & support, url: "/products.html", button: true }
